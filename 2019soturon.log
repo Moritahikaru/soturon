@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.8.3-191112-2.6 (utf8.sjis) (TeX Live 2019/W32TeX) (preloaded format=platex 2019.12.11)  21 JAN 2020 15:02
+This is e-pTeX, Version 3.14159265-p3.8.3-191112-2.6 (utf8.sjis) (TeX Live 2019/W32TeX) (preloaded format=platex 2019.12.11)  23 JAN 2020 14:12
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -501,13 +501,13 @@ LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <14.4> not available
 ] [5
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 81--82
+Underfull \hbox (badness 10000) in paragraph at lines 86--87
 []\JY1/mc/m/n/12 ロ ーム株式会社 ： ” ワイヤレス給電とは ” ーエレクトロニクス
 豆知
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 81--82
+Underfull \hbox (badness 10000) in paragraph at lines 86--87
 \JY1/mc/m/n/12 識\OT1/txr/m/n/12 , https://www.rohm.co.jp/electronics-basics/wi
 reless-charging/wireless-
  []
@@ -517,33 +517,33 @@ reless-charging/wireless-
 ] (I search kanjifont definition file: . . ) (I search font definition file:
 . . . . . . . )
 LaTeX Font Info:    Trying to load font information for OT1+txtt on input line 
-109.
+115.
  (c:/w32tex/share/texmf-dist/tex/latex/txr/ot1txtt.fd
 File: ot1txtt.fd 2000/12/15 v3.1
 )
 (I search kanjifont definition file: . . ) (I search font definition file: . .
 . . . . . )
 LaTeX Font Info:    Trying to load font information for OT1+txss on input line 
-110.
+116.
  (c:/w32tex/share/texmf-dist/tex/latex/txr/ot1txss.fd
 File: ot1txss.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Font shape `OT1/txss/m/n' will be
-(Font)              scaled to size 5.69998pt on input line 110.
+(Font)              scaled to size 5.69998pt on input line 116.
  [7
 
 ]
-Overfull \hbox (72.58751pt too wide) in paragraph at lines 219--220
+Overfull \hbox (72.58751pt too wide) in paragraph at lines 225--226
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 [8]
-Overfull \hbox (24.58702pt too wide) in paragraph at lines 263--265
+Overfull \hbox (24.58702pt too wide) in paragraph at lines 269--271
 [][][][][][][][][][][][][][][][][][][][] 
  []
 
 [9]
-Overfull \hbox (19.78697pt too wide) in paragraph at lines 291--292
+Overfull \hbox (19.78697pt too wide) in paragraph at lines 297--298
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
@@ -557,4 +557,4 @@ Here is how much of TeX's memory you used:
  929 hyphenation exceptions out of 8191
  30i,12n,45p,667b,1805s stack positions out of 5000i,500n,10000p,500000b,80000s
 
-Output written on 2019soturon.dvi (12 pages, 167036 bytes).
+Output written on 2019soturon.dvi (12 pages, 167980 bytes).
