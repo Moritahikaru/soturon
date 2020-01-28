@@ -6,6 +6,7 @@
 \contentsline {subsection}{\numberline {1.2}研究目的}{4}%
 \contentsline {section}{\numberline {2}本論文の構成}{5}%
 \contentsline {section}{\numberline {3}原理}{6}%
+\contentsline {subsection}{\numberline {3.1}ワイヤレス給電の原理}{6}%
 \contentsline {section}{\numberline {4}実験内容}{6}%
 \contentsline {section}{\numberline {5}実験結果}{6}%
 \contentsline {section}{\numberline {6}考察}{6}%
