@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.8.3-191112-2.6 (utf8.sjis) (TeX Live 2019/W32TeX) (preloaded format=platex 2019.12.11)  29 JAN 2020 17:49
+This is e-pTeX, Version 3.14159265-p3.8.3-191112-2.6 (utf8.sjis) (TeX Live 2019/W32TeX) (preloaded format=platex 2019.12.11)  30 JAN 2020 05:02
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -506,69 +506,81 @@ LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <14.4> not available
 ]
 File: wpt_2020128.png Graphic file (type bmp)
 <wpt_2020128.png>
+LaTeX Font Info:    Trying to load font information for OMS+txr on input line 8
+5.
+ (c:/w32tex/share/texmf-dist/tex/latex/txr/omstxr.fd
+File: omstxr.fd 2000/12/15 v3.1
+)
+LaTeX Font Info:    Font shape `OMS/txr/m/n' in size <12> not available
+(Font)              Font shape `OMS/txsy/m/n' tried instead on input line 85.
  [6
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 103--104
+[7
+
+] [8
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 158--159
 []\JY1/mc/m/n/12 ロ ーム株式会社 ： ” ワイヤレス給電とは ” ーエレクトロニクス
 豆知
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 103--104
+Underfull \hbox (badness 10000) in paragraph at lines 158--159
 \JY1/mc/m/n/12 識\OT1/txr/m/n/12 , https://www.rohm.co.jp/electronics-basics/wi
 reless-charging/wireless-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 110--111
+Underfull \hbox (badness 10000) in paragraph at lines 165--166
 []\OT1/txr/m/n/12 B&PLUS:"\JY1/mc/m/n/12 ワイヤレス給電の現状と未来\OT1/txr/m/n
 /12 "\JY1/mc/m/n/12 ， \OT1/txr/m/n/12 https://www.b-plus-
  []
 
-[7
+[9
 
 ] (I search kanjifont definition file: . . ) (I search font definition file:
 . . . . . . . )
 LaTeX Font Info:    Trying to load font information for OT1+txtt on input line 
-137.
+192.
  (c:/w32tex/share/texmf-dist/tex/latex/txr/ot1txtt.fd
 File: ot1txtt.fd 2000/12/15 v3.1
 )
 (I search kanjifont definition file: . . ) (I search font definition file: . .
 . . . . . )
 LaTeX Font Info:    Trying to load font information for OT1+txss on input line 
-138.
+193.
  (c:/w32tex/share/texmf-dist/tex/latex/txr/ot1txss.fd
 File: ot1txss.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Font shape `OT1/txss/m/n' will be
-(Font)              scaled to size 5.69998pt on input line 138.
- [8
+(Font)              scaled to size 5.69998pt on input line 193.
+ [10
 
-] [9]
-Overfull \hbox (53.38731pt too wide) in paragraph at lines 276--277
+] [11]
+Overfull \hbox (53.38731pt too wide) in paragraph at lines 331--332
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-[10]
-Overfull \hbox (5.38683pt too wide) in paragraph at lines 346--347
+[12]
+Overfull \hbox (5.38683pt too wide) in paragraph at lines 401--402
 [][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (0.58678pt too wide) in paragraph at lines 377--378
+Overfull \hbox (0.58678pt too wide) in paragraph at lines 432--433
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-[11] [12] [13] [14] (./2019soturon.aux) ) 
+[13] [14] [15] [16] (./2019soturon.aux) ) 
 Here is how much of TeX's memory you used:
- 5502 strings out of 492749
- 68450 string characters out of 6141886
- 186758 words of memory out of 5000000
- 9846 multiletter control sequences out of 15000+600000
+ 5525 strings out of 492749
+ 68792 string characters out of 6141886
+ 186799 words of memory out of 5000000
+ 9867 multiletter control sequences out of 15000+600000
  25805 words of font info for 86 fonts, out of 8000000 for 9000
  929 hyphenation exceptions out of 8191
  30i,12n,45p,685b,1803s stack positions out of 5000i,500n,10000p,500000b,80000s
 
-Output written on 2019soturon.dvi (14 pages, 199832 bytes).
+Output written on 2019soturon.dvi (16 pages, 206624 bytes).
