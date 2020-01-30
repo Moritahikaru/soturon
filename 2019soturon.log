@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.8.3-191112-2.6 (utf8.sjis) (TeX Live 2019/W32TeX) (preloaded format=platex 2019.12.11)  30 JAN 2020 17:42
+This is e-pTeX, Version 3.14159265-p3.8.3-191112-2.6 (utf8.sjis) (TeX Live 2019/W32TeX) (preloaded format=platex 2019.12.11)  31 JAN 2020 01:53
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -412,6 +412,9 @@ File: dvipdfmx.def 2017/06/24 v5.0g Graphics/color driver for dvipdfmx
 )
 (./2019soturon.aux
 
+LaTeX Warning: Label `eq:tannkei' multiply defined.
+
+
 LaTeX Warning: Label `eq:zyoutai' multiply defined.
 
 )
@@ -564,55 +567,63 @@ LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <14.4> not available
 File: wpt_2020128.png Graphic file (type bmp)
 <wpt_2020128.png>
 LaTeX Font Info:    Trying to load font information for OMS+txr on input line 8
-6.
+8.
  (c:/w32tex/share/texmf-dist/tex/latex/txr/omstxr.fd
 File: omstxr.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Font shape `OMS/txr/m/n' in size <12> not available
-(Font)              Font shape `OMS/txsy/m/n' tried instead on input line 86.
+(Font)              Font shape `OMS/txsy/m/n' tried instead on input line 88.
  [6
 
 ]
 [7
 
 ]
-Overfull \hbox (3.6679pt too wide) detected at line 160
+Overfull \hbox (3.6679pt too wide) detected at line 162
 []
  []
 
 
-Overfull \hbox (35.75589pt too wide) detected at line 168
+Overfull \hbox (35.75589pt too wide) detected at line 170
 []
  []
 
-[8] [9
+[8] [9]
+File: 191127shunt.png Graphic file (type bmp)
+<191127shunt.png>
+ [10
+
+] [11
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 198--199
+Underfull \hbox (badness 10000) in paragraph at lines 256--257
 []\JY1/mc/m/n/12 ロ ーム株式会社 ： ” ワイヤレス給電とは ” ーエレクトロニクス
 豆知
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 198--199
+Underfull \hbox (badness 10000) in paragraph at lines 256--257
 \JY1/mc/m/n/12 識\OT1/txr/m/n/12 , https://www.rohm.co.jp/electronics-basics/wi
 reless-charging/wireless-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 205--206
+Underfull \hbox (badness 10000) in paragraph at lines 263--264
 []\OT1/txr/m/n/12 B&PLUS:"\JY1/mc/m/n/12 ワイヤレス給電の現状と未来\OT1/txr/m/n
 /12 "\JY1/mc/m/n/12 ， \OT1/txr/m/n/12 https://www.b-plus-
  []
 
-[10
+[12
 
-] [11
+]
+File: wpt_2020128.png Graphic file (type bmp)
+<wpt_2020128.png>
+ [13
 
-] (I search kanjifont definition file: . . )
+] [14] (I search kanjifont definition file: . . )
 (I search font definition file: . . . . . . . )
 LaTeX Font Info:    Trying to load font information for OT1+txtt on input line 
-327.
+392.
 
 (c:/w32tex/share/texmf-dist/tex/latex/txr/ot1txtt.fd
 File: ot1txtt.fd 2000/12/15 v3.1
@@ -620,39 +631,39 @@ File: ot1txtt.fd 2000/12/15 v3.1
 (I search kanjifont definition file: . . ) (I search font definition file: . .
 . . . . . )
 LaTeX Font Info:    Trying to load font information for OT1+txss on input line 
-328.
+393.
  (c:/w32tex/share/texmf-dist/tex/latex/txr/ot1txss.fd
 File: ot1txss.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Font shape `OT1/txss/m/n' will be
-(Font)              scaled to size 5.69998pt on input line 328.
- [12] [13]
-Overfull \hbox (53.38731pt too wide) in paragraph at lines 466--467
+(Font)              scaled to size 5.69998pt on input line 393.
+ [15] [16]
+Overfull \hbox (53.38731pt too wide) in paragraph at lines 531--532
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-[14]
-Overfull \hbox (5.38683pt too wide) in paragraph at lines 536--537
+[17]
+Overfull \hbox (5.38683pt too wide) in paragraph at lines 601--602
 [][][][][][][][][][][][][][][][][][][] 
  []
 
-[15]
-Overfull \hbox (0.58678pt too wide) in paragraph at lines 567--568
+
+Overfull \hbox (0.58678pt too wide) in paragraph at lines 632--633
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-[16] [17] [18] [19] (./2019soturon.aux)
+[18] [19] [20] [21] (./2019soturon.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 6329 strings out of 492749
- 83445 string characters out of 6141886
- 210674 words of memory out of 5000000
- 10657 multiletter control sequences out of 15000+600000
+ 6341 strings out of 492749
+ 83637 string characters out of 6141886
+ 205728 words of memory out of 5000000
+ 10667 multiletter control sequences out of 15000+600000
  25805 words of font info for 86 fonts, out of 8000000 for 9000
  929 hyphenation exceptions out of 8191
  34i,14n,45p,685b,1809s stack positions out of 5000i,500n,10000p,500000b,80000s
 
-Output written on 2019soturon.dvi (19 pages, 216452 bytes).
+Output written on 2019soturon.dvi (21 pages, 224760 bytes).

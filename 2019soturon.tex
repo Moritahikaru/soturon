@@ -70,9 +70,11 @@
 ワイヤレス給電システムの最適動作周波数を能率的な周波数スイープによる測定，考察を目的にした．
 \clearpage
 \section{本論文の構成}
-
+\subsection*{緒言}
+	本研究の背景および，研究目的をこの章で述べる．
+\subsection*{本研究での基礎理論と原理}　ワイヤレス給電についての原理について，実験で扱う基礎理論についての説明をこの章で述べる．なお，実験で使われる素子についての説明もする．
 \clearpage
-\section{本研究での基礎理論}
+\section{本研究での基礎理論と実験原理}
 \subsection{ワイヤレス給電の原理}
 \begin{figure}[h]
 	\centering
@@ -172,13 +174,69 @@ x_{sst}(t)=
 \begin{cases}
 	-(I-e^{AT})^{-1}A^{-1}(e^{A(t+T(1-d))}-e^{At}-e^{AT}+I)Bu_o &\quad (0\leqq t <Td)\\
 	-(I-e^AT)^)(-1))(e^{A(t-Td)}-e^{At})Bu_0 & \quad(Td\leqq t <T)
+	\label{eq:tannkei}
 \end{cases} 
 \end{eqnarray}
 となる．
-\subsubsection{平均電力と効率の導出}
-\clearpage
+\subsubsection{平均電力と電力効率の導出}
+ある時刻においての電力を瞬時電力というが，平均電力は時間範囲内でその瞬時電力を時刻ごと加算して平均したものである．ここでは計算での平均電力と電力効率を求める方法を述べる　\\ある時刻においての瞬間電力$p_t$,電圧$v$，電流$i$とおくと
+\begin{equation}
+p_t=vi
+\end{equation}
+と表すことができる．瞬間電力が周期$T$をもつ場合，平均電力は０から$T$まで積分し，そして$T$で割ることにより求められる．よって，
+\begin{equation}
+P=\frac{1}{T}\int_{0}^{T}p_tdt
+\end{equation}
+となる．また，送電側と受電側の瞬時電力は次のように表される．
+\begin{eqnarray}
+\label{eq:ui_1}
+p_{t1}=ui_1\\
+\label{eq:R_Li_2^2}
+p_{t2}=R_Li_2^2
+\end{eqnarray}
+一次側と二次側の平均電力は式(\ref{eq:ui_1})と式(\ref{eq:R_Li_2^2})より
+\begin{eqnarray}
+\label{eq:P1}
+P_1=\frac{1}{T}\int_{0}^{T}u(t)i_1(t)dt\\
+\label{eq:P2}
+P_2=\frac{1}{T}\int_{0}^{T}R_Li_2^2dt
+\end{eqnarray}
+と導くことができる．\\
+ このように正弦波のような連続の関数を持つ周期関数はそのまま式(\ref{eq:P1})と式(\ref{eq:P2})に代入することが可能だが，短形波の平均電力は連続ではないので，注意して求める必要がある．したがって短形波の平均電力を求めるには，式(\ref{eq:zyoutai}）の状態方程式と式(\ref{eq:tannkei})の短形波の定常解を使って解くと，
+ \begin{eqnarray}
+ P_1=\frac{1}{T}\int_{0}^{Td}ui_{1ss1}(t)dt\\
+ P_2=\frac{1}{T}R_L(\int_{0}^{Td}i_{2ss1}^2dt+\int_{Td}^{T}i_{2ss2}^2dt)
+ \end{eqnarray}
+ となる．また$i_{1ss1}，i_{2ss1}は0 \leqq t < Tdのときのi_1,i_2でi_{2ss2}はTd \leqq t <Tのときのi_2である．$また，電力効率は$求めたP_1,P_2より$
+ \begin{equation}
+ \eta=\frac{P_2}{P_1}
+ \end{equation}
+ と求まる.これにより，送電側と受電側の平均電力と効率を求められる．
+ \clearpage
+ \subsection{実験における平均電力の求め方}
+ 前の小節にも述べた通り，最適動作周波数を求めるには送電側と受電側の平均電力と効率を求めなければならない．平均電力を求めるためには積分を使わなければいけない．そこで，以下の方法が挙げられる．
+ \subsubsection{出力方法}
+ \begin{figure}[h]
+ 	\centering
+ 	\includegraphics[]{191127shunt.png}
+ 	\caption{送電側回路測定部分}
+ 	\label{fig:shunt}
+ \end{figure}
+図(\ref{fig:shunt})に示されているものは，送電側の回路図上にシャント抵抗$R_s$を加えたものである．コイルに通る電流を$i$，シャント抵抗の抵抗は$R_s=0.1\Omega$なので，シャント抵抗間の電圧は，
+\begin{equation}
+v_s=0.1i
+\end{equation}
+となる．\\
+　電力を求めるにはシャント抵抗の電圧とコイル間電圧$V_L$を乗算器でかけることにより求めることができる．実験で使用した乗算器は乗算した値が1/10倍出力される特性を持つから，オペアンプでシャント抵抗の電圧を100倍にすることが求められる．$v_s$を100倍された値は，
+\begin{equation}
+0.1i \times 100=10i
+\end{equation}
+である．
+ \clearpage
 \section{実験内容}
-1
+
+
+
 \section{実験結果}
 
 \section{考察}
@@ -207,7 +265,13 @@ x_{sst}(t)=
 \clearpage
 \section{付録}
 \subsection{ワイヤレス給電の状態方程式導出}
-図(\ref{fig:wpt_kairo})の定数と電源の値を$u$として与えると，オームの法則とキルヒホッフの法則より，
+\begin{figure}[h]
+	\centering
+	\includegraphics[]{wpt_2020128.png}
+	\caption{ワイヤレス給電回路図}
+	\label{fig:wpt_kairo2}
+\end{figure}
+図(\ref{fig:wpt_kairo2})の定数と電源の値を$u$として与えると，オームの法則とキルヒホッフの法則より，
 \setcounter{equation}{0}
 \begin{eqnarray}
 \label{eq:ohm1}
@@ -248,7 +312,7 @@ $但し\Delta は$
 である．式(\ref{eq:doti1})と式(\ref{eq:doti2})を行列式でまとめると，
 \begin{eqnarray}
 \begin{bmatrix}
-\dot(v_1)\\
+\dot{v_1}\\
 \dot{v_2}\\
 \dot{i_1}\\
 \dot{i_2}
@@ -274,6 +338,7 @@ L_2\\
 -M
 \end{bmatrix}
 u
+\label{eq:tankei_joutai}
 \end{eqnarray}
 となる．この行列は以下のように$A,Bと状態変数x$として表すと，
 \begin{gather}
