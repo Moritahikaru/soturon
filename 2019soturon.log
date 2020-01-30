@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.8.3-191112-2.6 (utf8.sjis) (TeX Live 2019/W32TeX) (preloaded format=platex 2019.12.11)  30 JAN 2020 05:02
+This is e-pTeX, Version 3.14159265-p3.8.3-191112-2.6 (utf8.sjis) (TeX Live 2019/W32TeX) (preloaded format=platex 2019.12.11)  30 JAN 2020 15:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -157,13 +157,65 @@ s
 \f@nch@O@olf=\skip56
 \f@nch@O@orf=\skip57
 )
+(c:/w32tex/share/texmf-dist/tex/latex/mathtools/empheq.sty
+Package: empheq 2017/03/31 v2.15 Emphasizing equations
+
+(c:/w32tex/share/texmf-dist/tex/latex/mathtools/mhsetup.sty
+Package: mhsetup 2017/03/31 v1.3 programming setup (MH)
+)
+(c:/w32tex/share/texmf-dist/tex/latex/mathtools/mathtools.sty
+Package: mathtools 2019/07/31 v1.22 mathematical typesetting tools
+
+(c:/w32tex/share/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count108
+\calc@Bcount=\count109
+\calc@Adimen=\dimen138
+\calc@Bdimen=\dimen139
+\calc@Askip=\skip58
+\calc@Bskip=\skip59
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count110
+\calc@Cskip=\skip60
+)
+LaTeX Info: Thecontrolsequence`\('isalreadyrobust on input line 129.
+LaTeX Info: Thecontrolsequence`\)'isalreadyrobust on input line 129.
+LaTeX Info: Thecontrolsequence`\['isalreadyrobust on input line 129.
+LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 129.
+\g_MT_multlinerow_int=\count111
+\l_MT_multwidth_dim=\dimen140
+\origjot=\skip61
+\l_MT_shortvdotswithinadjustabove_dim=\dimen141
+\l_MT_shortvdotswithinadjustbelow_dim=\dimen142
+\l_MT_above_intertext_sep=\dimen143
+\l_MT_below_intertext_sep=\dimen144
+\l_MT_above_shortintertext_sep=\dimen145
+\l_MT_below_shortintertext_sep=\dimen146
+)
+\l_EQ_equationtype_int=\count112
+\l_EQ_alignmentmode_int=\count113
+\l_EQ_totalwidth_dim=\dimen147
+\l_EQ_displaywidth_dim=\dimen148
+\l_EQ_temp_linewidth_dim=\dimen149
+\EmphEqdelimitershortfall=\dimen150
+\EmphEqdelimiterfactor=\count114
+\g_EQ_toptag_height_dim=\dimen151
+\g_EQ_bottomtag_depth_dim=\dimen152
+\g_EQ_toprow_height_dim=\dimen153
+\g_EQ_bottomrow_depth_dim=\dimen154
+\g_EQ_widesttag_dim=\dimen155
+\EQ_mathdisplay_box=\box45
+\EQ_tag_box=\box46
+\g_EQ_temprow_int=\count115
+)
 (c:/w32tex/share/texmf-dist/tex/latex/fancybox/fancybox.sty
 Package: fancybox 2010/05/15 1.4
 
 Style option: `fancybox' v1.4 <2010/05/15> (tvz)
-\@fancybox=\box45
-\shadowsize=\dimen138
-\@Sbox=\box46
+\@fancybox=\box47
+\shadowsize=\dimen156
+\@Sbox=\box48
 \do@VerbBox=\toks29
 \the@fancyput=\toks30
 \this@fancyput=\toks31
@@ -171,24 +223,24 @@ Style option: `fancybox' v1.4 <2010/05/15> (tvz)
 \Verbatim@Outfile=\write3
 \Verbatim@Infile=\read1
 ) (c:/w32tex/share/texmf-local/tex/latex/listings/listings.sty
-\lst@mode=\count108
-\lst@gtempboxa=\box47
+\lst@mode=\count116
+\lst@gtempboxa=\box49
 \lst@token=\toks33
-\lst@length=\count109
-\lst@currlwidth=\dimen139
-\lst@column=\count110
-\lst@pos=\count111
-\lst@lostspace=\dimen140
-\lst@width=\dimen141
-\lst@newlines=\count112
-\lst@lineno=\count113
-\lst@maxwidth=\dimen142
+\lst@length=\count117
+\lst@currlwidth=\dimen157
+\lst@column=\count118
+\lst@pos=\count119
+\lst@lostspace=\dimen158
+\lst@width=\dimen159
+\lst@newlines=\count120
+\lst@lineno=\count121
+\lst@maxwidth=\dimen160
 
 (c:/w32tex/share/texmf-local/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2019/09/10 1.8c (Carsten Heinz)
-\c@lstnumber=\count114
-\lst@skipnumbers=\count115
-\lst@framebox=\box48
+\c@lstnumber=\count122
+\lst@skipnumbers=\count123
+\lst@framebox=\box50
 )
 (c:/w32tex/share/texmf-local/tex/latex/listings/listings.cfg
 File: listings.cfg 2019/09/10 1.8c listings configuration
@@ -197,7 +249,7 @@ Package: listings 2019/09/10 1.8c (Carsten Heinz)
 
 (c:/w32tex/share/texmf-local/tex/latex/listings/jlisting.sty
 Package: jlisting 2006/02/20 0.2 (Thor)
-\lst@nextchar=\count116
+\lst@nextchar=\count124
 \lst@inputfile=\read2
 )
 (c:/w32tex/share/texmf-dist/tex/latex/graphics/color.sty
@@ -219,32 +271,32 @@ Package: ascmac 2018/03/09 v2.0h ascmac wrapper (community edition)
 
 (c:/w32tex/share/texmf-dist/tex/latex/ascmac/tascmac.sty
 Package: tascmac 2018/03/09 v2.0h ascmac package (community edition) 
-\@savetbaselineshift=\dimen143
-\@saveybaselineshift=\dimen144
-\scb@x=\box49
-\scscb@x=\box50
-\@bw=\dimen145
-\@nbox=\box51
-\@nbody=\box52
-\@scw=\dimen146
-\ascmac@hoboxa=\box53
-\ascmac@hoboxb=\box54
-\@itemh=\dimen147
+\@savetbaselineshift=\dimen161
+\@saveybaselineshift=\dimen162
+\scb@x=\box51
+\scscb@x=\box52
+\@bw=\dimen163
+\@nbox=\box53
+\@nbody=\box54
+\@scw=\dimen164
+\ascmac@hoboxa=\box55
+\ascmac@hoboxb=\box56
+\@itemh=\dimen165
 \@iboxpos=\toks34
-\@iboxstr=\box55
-\@bwsp=\box56
-\@@bwsp=\box57
-\@bcal=\count117
-\shaderule=\dimen148
+\@iboxstr=\box57
+\@bwsp=\box58
+\@@bwsp=\box59
+\@bcal=\count125
+\shaderule=\dimen166
 ))
 (c:/w32tex/share/texmf-dist/tex/latex/here/here.sty)
 (c:/w32tex/share/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count118
+\c@float@type=\count126
 \float@exts=\toks35
-\float@box=\box58
+\float@box=\box60
 \@float@everytoks=\toks36
-\@floatcapt=\box59
+\@floatcapt=\box61
 )
 (c:/w32tex/share/texmf-dist/tex/latex/txr/txfonts.sty
 Package: txfonts 2008/01/22 v3.2.1
@@ -355,56 +407,60 @@ Package graphics Info: Driver file: dvipdfmx.def on input line 105.
 (c:/w32tex/share/texmf-dist/tex/latex/graphics-def/dvipdfmx.def
 File: dvipdfmx.def 2017/06/24 v5.0g Graphics/color driver for dvipdfmx
 ))
-\Gin@req@height=\dimen149
-\Gin@req@width=\dimen150
+\Gin@req@height=\dimen167
+\Gin@req@width=\dimen168
 )
-(./2019soturon.aux)
+(./2019soturon.aux
+
+LaTeX Warning: Label `eq:zyoutai' multiply defined.
+
+)
 \openout1 = `2019soturon.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 20.
+LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 22.
 LaTeX Font Info:    Trying to load font information for OML+txmi on input line 
-20.
+22.
  (c:/w32tex/share/texmf-dist/tex/latex/txr/omltxmi.fd
 File: omltxmi.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for OMS/txsy/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OMS/txsy/m/n on input line 22.
 LaTeX Font Info:    Trying to load font information for OMS+txsy on input line 
-20.
+22.
 
 (c:/w32tex/share/texmf-dist/tex/latex/txr/omstxsy.fd
 File: omstxsy.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for OMX/txex/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OMX/txex/m/n on input line 22.
 LaTeX Font Info:    Trying to load font information for OMX+txex on input line 
-20.
+22.
 
 (c:/w32tex/share/texmf-dist/tex/latex/txr/omxtxex.fd
 File: omxtxex.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for U/txexa/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for U/txexa/m/n on input line 22.
 LaTeX Font Info:    Trying to load font information for U+txexa on input line 2
-0.
+2.
 
 (c:/w32tex/share/texmf-dist/tex/latex/txr/utxexa.fd
 File: utxexa.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for JY1/mc/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for JT1/mc/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for JY1/mc/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for JT1/mc/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
 
 (I search kanjifont definition file: . . ) (I search font definition file: . .
 . . . . . )
 LaTeX Font Info:    Trying to load font information for OT1+txr on input line 2
-0.
+2.
  (c:/w32tex/share/texmf-dist/tex/latex/txr/ot1txr.fd
 File: ot1txr.fd 2000/12/15 v3.1
 )
@@ -444,14 +500,15 @@ File: ot1txr.fd 2000/12/15 v3.1
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-\c@lstlisting=\count119
+\Hy@linkcounter=\count127
+\c@lstlisting=\count128
 [1
 
 ]
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <17.28> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 47.
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 49.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <17.28> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 47.
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 49.
  (./2019soturon.toc
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <12> not available
 (Font)              Font shape `JT1/gt/m/n' tried instead on input line 1.
@@ -494,9 +551,9 @@ This may cause the page layout to be inconsistent, however.
 
 ]
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <14.4> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 53.
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 55.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <14.4> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 53.
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 55.
  [3
 
 ] [4
@@ -507,80 +564,85 @@ LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <14.4> not available
 File: wpt_2020128.png Graphic file (type bmp)
 <wpt_2020128.png>
 LaTeX Font Info:    Trying to load font information for OMS+txr on input line 8
-5.
+7.
  (c:/w32tex/share/texmf-dist/tex/latex/txr/omstxr.fd
 File: omstxr.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Font shape `OMS/txr/m/n' in size <12> not available
-(Font)              Font shape `OMS/txsy/m/n' tried instead on input line 85.
+(Font)              Font shape `OMS/txsy/m/n' tried instead on input line 87.
  [6
 
 ]
 [7
 
-] [8
+] [8] [9
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 158--159
+Underfull \hbox (badness 10000) in paragraph at lines 183--184
 []\JY1/mc/m/n/12 ロ ーム株式会社 ： ” ワイヤレス給電とは ” ーエレクトロニクス
 豆知
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 158--159
+Underfull \hbox (badness 10000) in paragraph at lines 183--184
 \JY1/mc/m/n/12 識\OT1/txr/m/n/12 , https://www.rohm.co.jp/electronics-basics/wi
 reless-charging/wireless-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 165--166
+Underfull \hbox (badness 10000) in paragraph at lines 190--191
 []\OT1/txr/m/n/12 B&PLUS:"\JY1/mc/m/n/12 ワイヤレス給電の現状と未来\OT1/txr/m/n
 /12 "\JY1/mc/m/n/12 ， \OT1/txr/m/n/12 https://www.b-plus-
  []
 
-[9
+[10
 
-] (I search kanjifont definition file: . . ) (I search font definition file:
-. . . . . . . )
+] [11
+
+] (I search kanjifont definition file: . . )
+(I search font definition file: . . . . . . . )
 LaTeX Font Info:    Trying to load font information for OT1+txtt on input line 
-192.
- (c:/w32tex/share/texmf-dist/tex/latex/txr/ot1txtt.fd
+312.
+
+(c:/w32tex/share/texmf-dist/tex/latex/txr/ot1txtt.fd
 File: ot1txtt.fd 2000/12/15 v3.1
 )
 (I search kanjifont definition file: . . ) (I search font definition file: . .
 . . . . . )
 LaTeX Font Info:    Trying to load font information for OT1+txss on input line 
-193.
+313.
  (c:/w32tex/share/texmf-dist/tex/latex/txr/ot1txss.fd
 File: ot1txss.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Font shape `OT1/txss/m/n' will be
-(Font)              scaled to size 5.69998pt on input line 193.
- [10
-
-] [11]
-Overfull \hbox (53.38731pt too wide) in paragraph at lines 331--332
+(Font)              scaled to size 5.69998pt on input line 313.
+ [12] [13]
+Overfull \hbox (53.38731pt too wide) in paragraph at lines 451--452
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-[12]
-Overfull \hbox (5.38683pt too wide) in paragraph at lines 401--402
+[14]
+Overfull \hbox (5.38683pt too wide) in paragraph at lines 521--522
 [][][][][][][][][][][][][][][][][][][] 
  []
 
-
-Overfull \hbox (0.58678pt too wide) in paragraph at lines 432--433
+[15]
+Overfull \hbox (0.58678pt too wide) in paragraph at lines 552--553
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-[13] [14] [15] [16] (./2019soturon.aux) ) 
+[16] [17] [18] [19] (./2019soturon.aux)
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
 Here is how much of TeX's memory you used:
- 5525 strings out of 492749
- 68792 string characters out of 6141886
- 186799 words of memory out of 5000000
- 9867 multiletter control sequences out of 15000+600000
+ 6327 strings out of 492749
+ 83427 string characters out of 6141886
+ 210674 words of memory out of 5000000
+ 10655 multiletter control sequences out of 15000+600000
  25805 words of font info for 86 fonts, out of 8000000 for 9000
  929 hyphenation exceptions out of 8191
- 30i,12n,45p,685b,1803s stack positions out of 5000i,500n,10000p,500000b,80000s
+ 34i,14n,45p,685b,1809s stack positions out of 5000i,500n,10000p,500000b,80000s
 
-Output written on 2019soturon.dvi (16 pages, 206624 bytes).
+Output written on 2019soturon.dvi (19 pages, 214800 bytes).

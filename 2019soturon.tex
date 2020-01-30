@@ -1,6 +1,7 @@
 \documentclass[12pt]{jarticle}
 \usepackage[a4paper,text={155mm,230mm},centering]{geometry}
 \usepackage{amssymb,amsmath,amsthm}
+\usepackage{amsmath}
 %\usepackage[dvips]{graphicx}
 \usepackage{fancyhdr}
 \pagestyle{fancy}
@@ -9,6 +10,7 @@
 \rhead{\thepage}
 \lfoot{}
 \cfoot{}
+\usepackage{empheq}
 \rfoot{森田光流}
 \usepackage{fancybox}
 \usepackage{listings,jlisting}
@@ -131,11 +133,34 @@ x(0)=(I-e^{AT})^{-1}e^{A(T-t)}\int_{0}^{T}e^{-A\tau}Bu(t+\tau)d\tau-\int_{0}^{t}
 \end{equation}
 で求まる(但し，$det(1-e^{AT}\neq0)$の時だけ)．式(\ref{eq:muzu})を式(\ref{eq:siki})に代入し，周期解$x_{ss}(t)$を求めると，
 \begin{eqnarray}
-x_{ss}(t)=e^{At}(I-e^{AT})^{-1}e^{A(T-t)}\int_{0}^{T}e^{-A\tau}Bu(t+\tau)d\tau-\int_{0}^{t}e^{-A\tau}Bu(\tau)d\tau+\int_{0}^{t}e^{-A\tau}Bu(\tau)d\tau\nonumber\\
-x_{ss}(t)=(I-e^{AT})^{-1}e^{At}\int_{0}^{T}e^{-A\tau}Bu(t+\tau)d\tau
+x_{ss}(t)=e^{At}(I-e^{AT})^{-1}e^{A(T-t)}&\int_{0}^{T}e^{-A\tau}Bu(t+\tau)d\tau&-\int_{0}^{t}e^{-A\tau}Bu(\tau)d\tau+\int_{0}^{t}e^{-A\tau}Bu(\tau)d\tau\nonumber
+\\x_{ss}(t)=(I-e^{AT})^{-1}e^{At}&\int_{0}^{T}e^{-A\tau}Bu(t+\tau)d\tau&
 \label{eq:Tteizyou}
 \end{eqnarray}
-
+よって，周期$T$定常解は式\ref{eq:Tteizyou}で求められる．
+\subsubsection{短形波入力の場合の定常解}
+短形波入力の定義は，
+\begin{eqnarray}
+u(t ) &=& 
+\begin{cases}
+u_0 \quad &(0\leqq t <Td)  \\
+0 \quad &(Td\leqq t <T) 
+\end{cases}
+\nonumber
+\\
+\label{eq:tannkei}
+かつ\quad u(t)&=&u(t+T)
+\end{eqnarray}
+であらわされる.$T$は1周期であり$d$はデューティー比である．そこから式(\ref{eq:Tteizyou})に式(\ref{eq:tannkei})を代入し範囲ごとに場合分けで積分し，$x_{sst}(t)$を求めると，
+\begin{eqnarray}
+x_{sst}(t)=
+\begin{cases}
+	-(I-e^{AT})^{-1}A^{-1}(e^{A(t+T(1-d))}-e^{At}-e^{AT}+I)Bu_o &\quad (0\leqq t <Td)\\
+	-(I-e^AT)^)(-1))(e^{A(t-Td)}-e^{At})Bu_0 & \quad(Td\leqq t <T)
+\end{cases} 
+\end{eqnarray}
+となる．
+\subsubsection{平均電力と効率の導出}
 \clearpage
 \section{実験内容}
 
@@ -166,6 +191,102 @@ x_{ss}(t)=(I-e^{AT})^{-1}e^{At}\int_{0}^{T}e^{-A\tau}Bu(t+\tau)d\tau
 \end{thebibliography}
 \clearpage
 \section{付録}
+\subsection{ワイヤレス給電の状態方程式導出}
+図(\ref{fig:wpt_kairo})の定数と電源の値を$u$として与えると，オームの法則とキルヒホッフの法則より，
+\setcounter{equation}{0}
+\begin{eqnarray}
+\label{eq:ohm1}
+u=R_1i_1+v_1+v_2\\
+\label{eq:ohm2}
+(R_{L1}+R_2)i_2+v_1+v_2=0
+\end{eqnarray}
+ コンデンサーの電圧と電流の関係より,
+\begin{eqnarray}
+\label{eq:ci1}
+C_1\dot{v_1}=i_1\\
+\label{eq:ci2}
+C_2\dot{v_2}=i_2
+\end{eqnarray}
+$V_{L_1}とV_{L_2}を相互インダクタンスMを含めた形にすると$
+\begin{eqnarray}
+\label{eq:addM1}
+V_{L1}=L_1\dot{i_1}+M\dot{i_2}\\
+\label{eq:addM2}
+V_{L2}=M\dot{i_1}+L_2\dot{i_2}
+\end{eqnarray}
+式(\ref{eq:ci1})と式(\ref{eq:ci2})を変形すると，
+\begin{eqnarray}
+\dot{v_1}=\frac{i_1}{C_1}\\
+\dot{v_2}=\frac{i_2}{C_2}
+\end{eqnarray}
+それぞれ式(\ref{eq:ohm1})に式(\ref{eq:addM1})を，式(\ref{eq:ohm2})に式(\ref{eq:addM2})を代入して$\dot{i}$で揃えると
+\begin{eqnarray}
+\label{eq:doti1}
+\dot{i_1}=\frac{Mv_2-L_2v_1-R_1L_2i_1+(R_L+R_2)Mi_2+L_2u}{\Delta}\\
+\label{eq:doti2}
+\dot{i_2}=\frac{Mv_1-L_1v_2+MR_1i_1-(R_L+R_2)L_1i_2+Mu}{\Delta}
+\end{eqnarray}
+$但し\Delta は$
+\begin{equation}
+\Delta=L_1L_2-M^2\nonumber
+\end{equation}
+である．式(\ref{eq:doti1})と式(\ref{eq:doti2})を行列式でまとめると，
+\begin{eqnarray}
+\begin{bmatrix}
+\dot(v_1)\\
+\dot{v_2}\\
+\dot{i_1}\\
+\dot{i_2}
+\end{bmatrix}
+=\frac{1}{\Delta}
+\begin{bmatrix}
+0 & 0 & \frac{\Delta}{C_1} & 0 \\
+0 & 0 & 0 & \frac{\Delta}{C_2} \\
+-L_2 & M & -R_1L_2 & (R_L+R_2)M \\
+M & -L_1 & R_1 & -(R_L+R_2)L_1
+\end{bmatrix}
+\begin{bmatrix}
+v_1\\
+v_2\\
+i_1\\
+i_2\\
+\end{bmatrix}
++\frac{1}{\Delta}
+\begin{bmatrix}
+0\\
+0\\
+L_2\\
+-M
+\end{bmatrix}
+u
+\end{eqnarray}
+となる．この行列は以下のように$A,Bと状態変数x$として表すと，
+\begin{gather}
+A=\frac{1}{\Delta}
+\begin{bmatrix}
+0 & 0 & \frac{\Delta}{C_1} & 0 \\
+0 & 0 & 0 & \frac{\Delta}{C_2} \\
+-L_2 & M & -R_1L_2 & (R_L+R_2)M \\
+M & -L_1 & R_1 & -(R_L+R_2)L_1
+\end{bmatrix}\\
+B=\frac{1}{\Delta}
+\begin{bmatrix}
+0\\
+0\\
+L_2\\
+-M
+\end{bmatrix}\\
+x=
+\begin{bmatrix}
+v_1\\
+v_2\\
+i_1\\
+i_2\\
+\end{bmatrix}\\
+\label{eq:zyoutai}
+\dot{x}=Ax+Bu
+\end{gather}
+となり式(\ref{eq:zyoutai})はワイヤレス給電の状態方程式となる．
 \subsection{プログラムについて}
 前章に示された通り先行研究では周波数を変更する方法で，わざわざArduinoのプログラムの一部を変更して再コンパイルさせ出力結果をシリアルモニターに表示させる方法であった．その面倒を省くためpythonを利用して周波数をarduinoに送り，arduinoの出力結果をデータに保存させるGUIを作成した．以下のプログラムはGUIで周波数をarduinoへシリアル通信で送信してarduinoに出力されたデータをシリアル通信でpython側に送る流れをするための，それぞれGUIのpythonプログラムと送電側のマイコンのarduinoプログラム，受電側のarduinoプログラムである．なお，pythonのプログラムにおいてGUIを作成にtkinterを使用した．tkinterの使用方法並びにpythonの使い方については参考文献：\cite{tkinter}を参考にした．
 \lstset{
@@ -186,7 +307,6 @@ x_{ss}(t)=(I-e^{AT})^{-1}e^{At}\int_{0}^{T}e^{-A\tau}Bu(t+\tau)d\tau
 	captionpos = t,
 	showstringspaces = false
 }
-
 	
 	%直接記入の場合
 	\begin{lstlisting}[caption = GUIプログラム , label = program1]
