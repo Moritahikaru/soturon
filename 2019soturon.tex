@@ -18,7 +18,6 @@
 \usepackage{ascmac, here, txfonts, txfonts}
 \usepackage[dvipdfmx]{graphicx}
 
-
 \begin{document}
 	
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%表紙
@@ -151,7 +150,23 @@ u_0 \quad &(0\leqq t <Td)  \\
 \label{eq:tannkei}
 かつ\quad u(t)&=&u(t+T)
 \end{eqnarray}
-であらわされる.$T$は1周期であり$d$はデューティー比である．そこから式(\ref{eq:Tteizyou})に式(\ref{eq:tannkei})を代入し範囲ごとに場合分けで積分し，$x_{sst}(t)$を求めると，
+であらわされる.$T$は1周期であり$d$はデューティー比である．そこから式(\ref{eq:Tteizyou})に式(\ref{eq:tannkei})を代入し範囲ごとに場合分けで積分し，$x_{sst}(t)$を求める.
+\\ \qquad i. $0\leqq t<Tdの場合$
+\begin{gather}
+\int_{0}^{T}e^{-Ap}Bu{t+p}dp=\int_{0}^{Td-t}e^{-Ap}Bu(t+p)dp+\int_{Td-t}^{T-t}e^{-Ap}Bu(t+p)dp+\int_{T-t}^{T}e^{-Ap}Bu{t+p}dp\nonumber \\
+=\int_{0}^{Td-t}e^{-Ap}Bu_0dp+\int_{T-t}^{T}e^{-Ap}Bu_0dp \nonumber \\ 
+=-A^{-1}e^{-AT}(e^{A(t+T(1-d))}-e^{-At}-e^{AT}+I)Bu_0
+\label{eq:0<td}
+\end{gather}
+\qquad ii. $Td \leqq t <Tdの場合$
+\begin{gather}
+\int_{0}^{T}e^{-Ap}Bu(t+p)dp=\int_{0}^{T-t}e^{-Ap}Bu(t+p)dp+\int_{T-t}^{t+dt-t}e^{-Ap}Bu(t+p)dp+\int_{T+dt-t}^{T}e^{-Ap}
+Bu(t+p)dp \nonumber\\
+=\int_{T-t}^{T+dt-t}e^{-Ap}Bu_0dp \nonumber\\
+=-A^{-1}e^{-AT}(e^{A(t-td)}-e^{At})Bu_0
+\label{eq:td<T}
+\end{gather}
+となる．よって，式(\ref{eq:0<td})と式(\ref{eq:td<T})から$x_{sst}(t)$は，
 \begin{eqnarray}
 x_{sst}(t)=
 \begin{cases}
@@ -163,7 +178,7 @@ x_{sst}(t)=
 \subsubsection{平均電力と効率の導出}
 \clearpage
 \section{実験内容}
-
+1
 \section{実験結果}
 
 \section{考察}
