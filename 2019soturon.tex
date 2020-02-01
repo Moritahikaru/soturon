@@ -18,6 +18,7 @@
 \usepackage{ascmac, here, txfonts, txfonts}
 \usepackage[dvipdfmx]{graphicx}
 \usepackage{here}
+\usepackage{multirow}
 
 \begin{document}
 	
@@ -256,7 +257,8 @@ P_2=\frac{1}{T}\int_{0}^{T}R_Li_2^2dt
  \end{eqnarray}
  となる．また$i_{1ss1}，i_{2ss1}は0 \leqq t < Tdのときのi_1,i_2でi_{2ss2}はTd \leqq t <Tのときのi_2である．$また，電力効率は$求めたP_1,P_2より$
  \begin{equation}
- \eta=\frac{P_2}{P_1}
+ \eta=\frac{P_2}{P_1}\\
+ \label{eq:kouritu}
  \end{equation}
  と求まる.これにより，送電側と受電側の平均電力と効率を求められる．
  \clearpage
@@ -295,9 +297,15 @@ W=\frac{(X1-X2)(Y1-Y2)}{10}+Z \nonumber \\
 =\frac{V_L10i}{10i}=V_Li
 \end{eqnarray}
 となり実験中で電力を求めることができる．
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.1]{op_multi.JPG}
+	\caption{オペアンプー乗算器回路}
+	\label{fig:op_multi}
+\end{figure}
  \clearpage
-\section{実験}
-\subsection{周波数スイープについて}
+\section{実験内容}
+\subsection{周波数スイープの概要}
 　実験による最適動作周波数を探索する方法としては周波数スイープが挙げられる．周波数スイープとは一定の時間や速度において周波数を変化させ出力させる方法である．なお本研究における周波数スイープは以下のようなやり方でする．(図\ref{fig:freq_sweep})
  \begin{figure}[H]
 	\centering
@@ -306,9 +314,9 @@ W=\frac{(X1-X2)(Y1-Y2)}{10}+Z \nonumber \\
 	\label{fig:freq_sweep}
 \end{figure}
 \begin{enumerate}
-	\item 一番最初の周波数を回路に送る．なお一番最初の周波数，一番最後の周波数，1つの周波数における測定時間，次の周波数で加算する周波数の量をあらかじめ決めておく必要がある．
+	\item 一番最初の周波数を回路に送る．なお一番最初の周波数，一番最後の周波数，1つの周波数における測定時間，次の周波数で加算する周波数(以後加算周波数)の量をあらかじめ決めておく必要がある．
 	\item 決めた時間で測定する．0.1秒ずつデータが出力される．
-	\item 一定時間に達したら，周波数に決めた量の周波数を加算し一番最後の周波数に達するまで繰り返す．
+	\item 一定時間に達したら，加算周波数を加算し一番最後の周波数に達するまで繰り返す．
 \end{enumerate}
 \clearpage
 \subsection{プログラムによる周波数スイープ自動化}
@@ -333,6 +341,80 @@ W=\frac{(X1-X2)(Y1-Y2)}{10}+Z \nonumber \\
 	\caption{電力測定するためのGUI}
 	\label{fig:gui}
 \end{figure}
+\clearpage
+\subsection{最適動作判定}
+ワイヤレス給電の最適動作周波数であるには前章にも述べたが高電力かつ高効率であることが重要である．したがって次の計算式を導入した．なお，定数はそれぞれ周波数スイープによって測定と受電側の電力$P_2,式(\ref{eq:kouritu})によって導き出された効率\eta$である．
+\begin{eqnarray}
+(最適動作判定)=P_2\eta
+\end{eqnarray}
+この値が高い数値であればあるほど最適動作周波数だといえる．
+\subsection{能率的な周波数スイープ}
+\subsubsection*{時間・加算周波数決定}
+先行研究では，一つの周波数を送って測定するまでの時間を10秒で測定した．しかし，今研究においては多くの周波数を測りたいがためあまり時間をかけたくないから10秒では多すぎると考える．逆に測定時間を短くしすぎると出力される電力が周期的になるまで時間がかかるので周期的になる前に出力される．また低周波ずつ上げると確かに正確に測ることが可能だが同じく時間がかかる．逆に大雑把に周波数を取りすぎると最適周波数が分からなくなる．したがって周波数スイープが能率的になる周波数の測定時間と，加算周波数の量を事前に決めておく必要がある．事前に決めた数値は表\ref{tab:hyo1}である．
+\begin{table}[h]
+	\centering
+	\caption{測定時間・加算周波数決定値}
+	\label{tab:hyo1}
+	\begin{tabular}{|l|r|}\hline
+		測定時間  & 1.5s \\ \hline
+		加算周波数 & 10kHz\\ \hline
+	\end{tabular}
+\end{table}
+\clearpage
+\subsection{実験条件}
+ \begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.1]{koiru.JPG}
+	\caption{実験コイル}
+	\label{fig:koiru}
+\end{figure}
+本研究においてコイルは図\ref{fig:koiru}のものを使った．なおコイルは前々度の卒業研究(参考文献\cite{goizuka})で使われたものである．また，以下の表\ref{tab:koiru}において実験コイルの本体・インダクタンスのパラメータ，使用素子のパラメータの実験条件を示す．(参考文献：\cite{goizuka})
+\begin{table}[h]
+	\caption{実験コイル}
+	\centering
+	\label{tab:koiru}
+	\begin{tabular}{|l|l|l|}
+		\hline
+		\multicolumn{2}{|l|}{パラメータ}          & 値{[}単位{]}                 \\ \hline
+		\multirow{2}{*}{コイル半径}  & 送電側        & 0.05{[}m{]}               \\ \cline{2-3} 
+		& 受電側        & 0.05{[}m{]}               \\ \hline
+		\multirow{2}{*}{導線直径}   & 送電側        & 0.001{[}m{]}              \\ \cline{2-3} 
+		& 受電側        & 0.001{[}m{]}              \\ \hline
+		\multirow{2}{*}{送電側巻き数} & 同心         & 3{[}巻{]}                  \\ \cline{2-3} 
+		& 垂直         & 3{[}巻{]}                  \\ \hline
+		\multirow{2}{*}{受電側巻き数} & 同心         & 3{[}巻{]}                  \\ \cline{2-3} 
+		& 垂直         & 3{[}巻{]}                  \\ \hline
+		\multirow{2}{*}{抵抗}     & 送電側$(R_1)$ & 0.08($\Omega$) \\ \cline{2-3} 
+		& 受電側$(R_2)$ & 0.08($\Omega$) \\ \hline
+		\multicolumn{2}{|l|}{コイル間距離}      & 0.05{[}$m${]}                   \\ \hline
+	\end{tabular}
+\end{table}
+\begin{table}[h]
+	\centering
+	\caption{コイルのインダクタンス}
+	\label{tab:indact}
+	\begin{tabular}{|l|l|l|}
+		\hline
+		\multicolumn{2}{|l|}{パラメータ}             & 値{[}単位{]}       \\ \hline
+		\multirow{2}{*}{自己インダクタンス} & 送電側($L_1$) & 23.6{[}$\mu${]} \\ \cline{2-3} 
+		& 受電側($L_2$) & 23.6{[}$\mu${]} \\ \hline
+		相互インダクタンス                  & $M$        & 1.98{[}$\mu${]} \\ \hline
+	\end{tabular}
+\end{table}
+\begin{table}[h]
+	\centering
+	\caption{使用素子}
+	\label{tab:sosi}
+	\begin{tabular}{|l|l|l|}
+		\hline
+		\multicolumn{2}{|l|}{パラメータ}       & 値{[}単位{]}                       \\ \hline
+		電源電圧                   & $u$      & 10.0{[}$V${]}                   \\ \hline
+		デューティ比                 & $d$      & 0.5                             \\ \hline
+		\multirow{2}{*}{コンデンサ} & 送電側$C_1$ & 108{[}$nF${]}                   \\ \cline{2-3} 
+		& 受電側$C_2$ & 108{[}$nF${]}                   \\ \hline
+		負荷抵抗                   & $R_L$    & 20.0{[}\textbackslash{}Omega{]} \\ \hline
+	\end{tabular}
+\end{table}
 \clearpage
 \section{実験結果}
 \clearpage
@@ -916,7 +998,6 @@ data = Serial.readString();
 data0 = data.toFloat();
 }
 	\end{lstlisting}
-	% ソースコードが別ファイルの場合
 
 \end{document}
 

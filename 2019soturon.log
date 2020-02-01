@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.8.3-191112-2.6 (utf8.sjis) (TeX Live 2019/W32TeX) (preloaded format=platex 2019.12.11)  1 FEB 2020 18:06
+This is e-pTeX, Version 3.14159265-p3.8.3-191112-2.6 (utf8.sjis) (TeX Live 2019/W32TeX) (preloaded format=platex 2019.12.11)  2 FEB 2020 01:15
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -410,7 +410,13 @@ File: dvipdfmx.def 2017/06/24 v5.0g Graphics/color driver for dvipdfmx
 \Gin@req@height=\dimen167
 \Gin@req@width=\dimen168
 )
-(./2019soturon.aux
+(c:/w32tex/share/texmf-dist/tex/latex/multirow/multirow.sty
+Package: multirow 2019/05/31 v2.5 Span multiple rows of a table
+\multirow@colwidth=\skip62
+\multirow@cntb=\count127
+\multirow@dima=\skip63
+\bigstrutjot=\dimen169
+) (./2019soturon.aux
 
 LaTeX Warning: Label `eq:tannkei' multiply defined.
 
@@ -423,50 +429,50 @@ LaTeX Warning: Label `fig:zouhuku' multiply defined.
 )
 \openout1 = `2019soturon.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 22.
+LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 23.
 LaTeX Font Info:    Trying to load font information for OML+txmi on input line 
-22.
+23.
  (c:/w32tex/share/texmf-dist/tex/latex/txr/omltxmi.fd
 File: omltxmi.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for OMS/txsy/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OMS/txsy/m/n on input line 23.
 LaTeX Font Info:    Trying to load font information for OMS+txsy on input line 
-22.
+23.
 
 (c:/w32tex/share/texmf-dist/tex/latex/txr/omstxsy.fd
 File: omstxsy.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for OMX/txex/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OMX/txex/m/n on input line 23.
 LaTeX Font Info:    Trying to load font information for OMX+txex on input line 
-22.
+23.
 
 (c:/w32tex/share/texmf-dist/tex/latex/txr/omxtxex.fd
 File: omxtxex.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for U/txexa/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for U/txexa/m/n on input line 23.
 LaTeX Font Info:    Trying to load font information for U+txexa on input line 2
-2.
+3.
 
 (c:/w32tex/share/texmf-dist/tex/latex/txr/utxexa.fd
 File: utxexa.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for JY1/mc/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for JT1/mc/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for JY1/mc/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for JT1/mc/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
 
 (I search kanjifont definition file: . . ) (I search font definition file: . .
 . . . . . )
 LaTeX Font Info:    Trying to load font information for OT1+txr on input line 2
-2.
+3.
  (c:/w32tex/share/texmf-dist/tex/latex/txr/ot1txr.fd
 File: ot1txr.fd 2000/12/15 v3.1
 )
@@ -506,43 +512,16 @@ File: ot1txr.fd 2000/12/15 v3.1
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-\Hy@linkcounter=\count127
-\c@lstlisting=\count128
+\Hy@linkcounter=\count128
+\c@lstlisting=\count129
 [1
 
 ]
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <17.28> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 49.
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 50.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <17.28> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 49.
- (./2019soturon.toc
-LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <12> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 1.
-LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <12> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 1.
-LaTeX Font Info:    Trying to load font information for U+txsya on input line 2
-.
- (c:/w32tex/share/texmf-dist/tex/latex/txr/utxsya.fd
-File: utxsya.fd 2000/12/15 v3.1
-)
-LaTeX Font Info:    Trying to load font information for U+txsyb on input line 2
-.
-
-(c:/w32tex/share/texmf-dist/tex/latex/txr/utxsyb.fd
-File: utxsyb.fd 2000/12/15 v3.1
-)
-LaTeX Font Info:    Trying to load font information for U+txmia on input line 2
-.
-
-(c:/w32tex/share/texmf-dist/tex/latex/txr/utxmia.fd
-File: utxmia.fd 2000/12/15 v3.1
-)
-LaTeX Font Info:    Trying to load font information for U+txsyc on input line 2
-.
-
-(c:/w32tex/share/texmf-dist/tex/latex/txr/utxsyc.fd
-File: utxsyc.fd 2000/12/15 v3.1
-))
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 50.
+ (./2019soturon.toc)
 \tf@toc=\write4
 \openout4 = `2019soturon.toc'.
 
@@ -557,9 +536,13 @@ This may cause the page layout to be inconsistent, however.
 
 ]
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <14.4> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 55.
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 56.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <14.4> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 55.
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 56.
+LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <12> not available
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 57.
+LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <12> not available
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 57.
  [3
 
 ] [4
@@ -569,31 +552,53 @@ LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <14.4> not available
 ]
 File: wpt_2020128.png Graphic file (type bmp)
 <wpt_2020128.png>
-LaTeX Font Info:    Trying to load font information for OMS+txr on input line 8
-9.
+LaTeX Font Info:    Trying to load font information for OMS+txr on input line 9
+0.
  (c:/w32tex/share/texmf-dist/tex/latex/txr/omstxr.fd
 File: omstxr.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Font shape `OMS/txr/m/n' in size <12> not available
-(Font)              Font shape `OMS/txsy/m/n' tried instead on input line 89.
+(Font)              Font shape `OMS/txsy/m/n' tried instead on input line 90.
  [6
 
 ]
 File: RLC.png Graphic file (type bmp)
 <RLC.png>
+LaTeX Font Info:    Trying to load font information for U+txsya on input line 1
+11.
 
-[7
+(c:/w32tex/share/texmf-dist/tex/latex/txr/utxsya.fd
+File: utxsya.fd 2000/12/15 v3.1
+)
+LaTeX Font Info:    Trying to load font information for U+txsyb on input line 1
+11.
+
+(c:/w32tex/share/texmf-dist/tex/latex/txr/utxsyb.fd
+File: utxsyb.fd 2000/12/15 v3.1
+)
+LaTeX Font Info:    Trying to load font information for U+txmia on input line 1
+11.
+
+(c:/w32tex/share/texmf-dist/tex/latex/txr/utxmia.fd
+File: utxmia.fd 2000/12/15 v3.1
+)
+LaTeX Font Info:    Trying to load font information for U+txsyc on input line 1
+11.
+
+(c:/w32tex/share/texmf-dist/tex/latex/txr/utxsyc.fd
+File: utxsyc.fd 2000/12/15 v3.1
+) [7
 
 ]
 File: RLCkyousin.png Graphic file (type bmp)
 <RLCkyousin.png>
  [8]
-Overfull \hbox (3.6679pt too wide) detected at line 209
+Overfull \hbox (3.6679pt too wide) detected at line 210
 []
  []
 
 [9]
-Overfull \hbox (35.75589pt too wide) detected at line 217
+Overfull \hbox (35.75589pt too wide) detected at line 218
 []
  []
 
@@ -604,7 +609,10 @@ File: 191127zouhuku.png Graphic file (type bmp)
 <191127zouhuku.png>
  [12
 
-] [13]
+]
+File: op_multi.JPG Graphic file (type bmp)
+<op_multi.JPG>
+ [13]
 File: freqency_sweep.png Graphic file (type bmp)
 <freqency_sweep.png>
  [14
@@ -618,45 +626,62 @@ File: gui.png Graphic file (type bmp)
 
 ] [16] [17
 
-] [18
+]
+File: koiru.JPG Graphic file (type bmp)
+<koiru.JPG>
 
-] [19
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[18
+
+] [19] [20
+
+] [21
+
+] [22
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 352--353
+Underfull \hbox (badness 10000) in paragraph at lines 434--435
 []\JY1/mc/m/n/12 ロ ーム株式会社 ： ” ワイヤレス給電とは ” ーエレクトロニクス
 豆知
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 352--353
+Underfull \hbox (badness 10000) in paragraph at lines 434--435
 \JY1/mc/m/n/12 識\OT1/txr/m/n/12 , https://www.rohm.co.jp/electronics-basics/wi
 reless-charging/wireless-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 359--360
+Underfull \hbox (badness 10000) in paragraph at lines 441--442
 []\OT1/txr/m/n/12 B&PLUS:"\JY1/mc/m/n/12 ワイヤレス給電の現状と未来\OT1/txr/m/n
 /12 "\JY1/mc/m/n/12 ， \OT1/txr/m/n/12 https://www.b-plus-
  []
 
-[20
+[23
 
-] [21]
+] [24]
 File: wpt_2020128.png Graphic file (type bmp)
 <wpt_2020128.png>
- [22
+ [25
 
 ]
 File: senkou.png Graphic file (type bmp)
 <senkou.png>
- [23]
+ [26]
 File: hanten2.png Graphic file (type bmp)
 <hanten2.png>
- [24] (I search kanjifont definition file: . . )
+ [27] (I search kanjifont definition file: . . )
 (I search font definition file: . . . . . . . )
 LaTeX Font Info:    Trying to load font information for OT1+txtt on input line 
-503.
+585.
 
 (c:/w32tex/share/texmf-dist/tex/latex/txr/ot1txtt.fd
 File: ot1txtt.fd 2000/12/15 v3.1
@@ -664,39 +689,39 @@ File: ot1txtt.fd 2000/12/15 v3.1
 (I search kanjifont definition file: . . ) (I search font definition file: . .
 . . . . . )
 LaTeX Font Info:    Trying to load font information for OT1+txss on input line 
-504.
+586.
  (c:/w32tex/share/texmf-dist/tex/latex/txr/ot1txss.fd
 File: ot1txss.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Font shape `OT1/txss/m/n' will be
-(Font)              scaled to size 5.69998pt on input line 504.
- [25] [26]
-Overfull \hbox (53.38731pt too wide) in paragraph at lines 642--643
+(Font)              scaled to size 5.69998pt on input line 586.
+ [28] [29]
+Overfull \hbox (53.38731pt too wide) in paragraph at lines 724--725
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-[27]
-Overfull \hbox (5.38683pt too wide) in paragraph at lines 712--713
+[30]
+Overfull \hbox (5.38683pt too wide) in paragraph at lines 794--795
 [][][][][][][][][][][][][][][][][][][] 
  []
 
-[28]
-Overfull \hbox (0.58678pt too wide) in paragraph at lines 743--744
+[31]
+Overfull \hbox (0.58678pt too wide) in paragraph at lines 825--826
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-[29] [30] [31] (./2019soturon.aux)
+[32] [33] [34] (./2019soturon.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 6395 strings out of 492749
- 84532 string characters out of 6141886
- 210846 words of memory out of 5000000
- 10705 multiletter control sequences out of 15000+600000
+ 6470 strings out of 492749
+ 85651 string characters out of 6141886
+ 211628 words of memory out of 5000000
+ 10771 multiletter control sequences out of 15000+600000
  25805 words of font info for 86 fonts, out of 8000000 for 9000
  929 hyphenation exceptions out of 8191
  34i,14n,45p,685b,1809s stack positions out of 5000i,500n,10000p,500000b,80000s
 
-Output written on 2019soturon.dvi (31 pages, 238236 bytes).
+Output written on 2019soturon.dvi (34 pages, 239496 bytes).
