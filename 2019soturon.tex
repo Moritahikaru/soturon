@@ -17,6 +17,7 @@
 \usepackage{color}
 \usepackage{ascmac, here, txfonts, txfonts}
 \usepackage[dvipdfmx]{graphicx}
+\usepackage{here}
 
 \begin{document}
 	
@@ -72,9 +73,9 @@
 \section{本論文の構成}
 \subsection*{緒言}
 	本研究の背景および，研究目的をこの章で述べる．
-\subsection*{本研究での基礎理論と原理}　ワイヤレス給電についての原理について，実験で扱う基礎理論についての説明をこの章で述べる．なお，実験で使われる素子についての説明もする．
+\subsection*{本研究での基礎理論と原理}　ワイヤレス給電についての原理，または本研究において扱うワイヤレス給電測定による基礎理論についてを述べる．
 \clearpage
-\section{本研究での基礎理論と実験原理}
+\section{本研究での基礎理論と原理}
 \subsection{ワイヤレス給電の原理}
 \begin{figure}[h]
 	\centering
@@ -97,6 +98,52 @@
 	\end{itemize}
 \end{quote}
 \clearpage
+\subsection{共振周波数}
+　周波数と電力の関係として，共振周波数について説明する．共振周波数は回路が共振するときの周波数である．本研究において図\ref{fig:RLC}のRLC直列回路を使用する．この場合はRLC直列回路の共振周波数になる．
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.5]{RLC.png}
+	\caption{RLC直列回路}
+	\label{fig:RLC}
+\end{figure}
+共振周波数を求めるためにはまずインピーダンスを求める必要がある．図\ref{fig:RLC}の時インピーダンスは，
+\begin{eqnarray}
+\label{eq:Z}
+\dot{Z}=R+j(X_L-X_C) \nonumber\\
+=R+j(\omega L-\frac{1}{\omega C})
+\end{eqnarray}
+となる．このとき$\omega$は角周波数であり，
+\begin{equation}
+\label{eq:omega}
+\omega=2 \pi f
+\end{equation}
+となる．RLC直列回路が直列共振する条件は，\ref{eq:Z}の$X_L-X_Cが0になるときなので$
+\begin{eqnarray}
+\omega L-\frac{1}{\omega C}=0　\nonumber \\
+\label{eq:zyouken}
+\omega L=\frac{1}{\omega C}
+\end{eqnarray}
+\begin{equation}
+\dot{Z}=R
+\label{eq:R}
+\end{equation}
+となる．またその時の周波数を$f_0$とし，式(\ref{eq:omega})式(\ref{eq:zyouken})から，
+\begin{equation}
+2 \pi f_0L=\frac{1}{2 \pi f_0C}
+\label{eq:f_0}
+\end{equation}
+式(\ref{eq:f_0})から$f_0を解くと$
+\begin{eqnarray}
+f_0=\frac{1}{2 \pi\sqrt{LC}}
+\end{eqnarray}
+となる．
+\\　式(\ref{eq:R}),図\ref{fig:RLCkyosin}からRLC直列回路が共振周波数近づくほどインピーダンスが小さくなり遠くなるほど大きくなる．インピーダンスが小さいと電流が大きくなる．したがって周波数が共振周波数のとき最も電力が大きいことが分かる．
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.5]{RLCkyousin.png}
+	\caption{周波数とインダクタンスの関係}
+	\label{fig:RLCkyosin}
+\end{figure}
 \subsection{平均電力・効率}
 ワイヤレス給電の最適動作周波数を探索するためには平均電力と効率を求める必要があるが，平均電力を求めるにはワイヤレス給電の定常解を求める必要がある．
 \subsubsection{定常解の導出}
@@ -134,8 +181,8 @@ x(0)=(I-e^{AT})^{-1}e^{A(T-t)}\int_{0}^{T}e^{-A\tau}Bu(t+\tau)d\tau-\int_{0}^{t}
 \end{equation}
 で求まる(但し，$det(1-e^{AT}\neq0)$の時だけ)．式(\ref{eq:muzu})を式(\ref{eq:siki})に代入し，周期解$x_{ss}(t)$を求めると，
 \begin{eqnarray}
-x_{ss}(t)=e^{At}(I-e^{AT})^{-1}e^{A(T-t)}&\int_{0}^{T}e^{-A\tau}Bu(t+\tau)d\tau&-\int_{0}^{t}e^{-A\tau}Bu(\tau)d\tau+\int_{0}^{t}e^{-A\tau}Bu(\tau)d\tau\nonumber
-\\x_{ss}(t)=(I-e^{AT})^{-1}e^{At}&\int_{0}^{T}e^{-A\tau}Bu(t+\tau)d\tau&
+x_{ss}(t)=e^{At}(I-e^{AT})^{-1}e^{A(T-t)}&\int_{0}^{T}e^{-A\tau}Bu(t+\tau)d\tau&-\int_{0}^{t}e^{-A\tau}Bu(\tau)d\tau+\int_{0}^{t}e^{-A\tau}Bu(\tau)d\tau\nonumber\\
+x_{ss}(t)=(I-e^{AT})^{-1}e^{At}&\int_{0}^{T}e^{-A\tau}Bu(t+\tau)d\tau&
 \label{eq:Tteizyou}
 \end{eqnarray}
 よって，周期$T$定常解は式\ref{eq:Tteizyou}で求められる．
@@ -215,14 +262,13 @@ P_2=\frac{1}{T}\int_{0}^{T}R_Li_2^2dt
  \clearpage
  \subsection{実験における平均電力の求め方}
  前の小節にも述べた通り，最適動作周波数を求めるには送電側と受電側の平均電力と効率を求めなければならない．平均電力を求めるためには積分を使わなければいけない．そこで，以下の方法が挙げられる．
- \subsubsection{出力方法}
  \begin{figure}[h]
  	\centering
  	\includegraphics[]{191127shunt.png}
  	\caption{送電側回路測定部分}
  	\label{fig:shunt}
  \end{figure}
-図(\ref{fig:shunt})に示されているものは，送電側の回路図上にシャント抵抗$R_s$を加えたものである．コイルに通る電流を$i$，シャント抵抗の抵抗は$R_s=0.1\Omega$なので，シャント抵抗間の電圧は，
+\\　図(\ref{fig:shunt})に示されているものは，送電側の回路図上にシャント抵抗$R_s$を加えたものである．コイルに通る電流を$i$，シャント抵抗の抵抗は$R_s=0.1\Omega$なので，シャント抵抗間の電圧は，
 \begin{equation}
 v_s=0.1i
 \end{equation}
@@ -231,20 +277,70 @@ v_s=0.1i
 \begin{equation}
 0.1i \times 100=10i
 \end{equation}
-である．
+となる.
+ \begin{figure}[h]
+	\centering
+	\includegraphics[]{191127zouhuku.png}
+	\caption{乗算器回路図}
+	\label{fig:zouhuku}
+\end{figure}
+　\\ \\図(fig:zouhuku)の乗算器回路において，計算方法としては以下のとおりである．
+\begin{eqnarray}
+W=\frac{(X1-X2)(Y1-Y2)}{10}+Z
+\end{eqnarray}
+$コイル間電圧V_Lの電位のX1とX2を乗算器のX1とX2,オペアンプを通した後の電圧を乗算器のY1,回路のGNDをY2とすると，$図(fig:shunt)上での電力の以下のようになる．なお，図(\ref{fig:zouhuku})のZはGNDにつないでいる．
+\begin{eqnarray}
+W=\frac{(X1-X2)(Y1-Y2)}{10}+Z \nonumber \\
+=\frac{(X1-X2)(10V_s-0)}{10}+0 \nonumber \\
+=\frac{V_L10i}{10i}=V_Li
+\end{eqnarray}
+となり実験中で電力を求めることができる．
  \clearpage
-\section{実験内容}
-
-
-
+\section{実験}
+\subsection{周波数スイープについて}
+　実験による最適動作周波数を探索する方法としては周波数スイープが挙げられる．周波数スイープとは一定の時間や速度において周波数を変化させ出力させる方法である．なお本研究における周波数スイープは以下のようなやり方でする．(図\ref{fig:freq_sweep})
+ \begin{figure}[H]
+	\centering
+	\includegraphics[]{freqency_sweep.png}
+	\caption{周波数スイープ方法図}
+	\label{fig:freq_sweep}
+\end{figure}
+\begin{enumerate}
+	\item 一番最初の周波数を回路に送る．なお一番最初の周波数，一番最後の周波数，1つの周波数における測定時間，次の周波数で加算する周波数の量をあらかじめ決めておく必要がある．
+	\item 決めた時間で測定する．0.1秒ずつデータが出力される．
+	\item 一定時間に達したら，周波数に決めた量の周波数を加算し一番最後の周波数に達するまで繰り返す．
+\end{enumerate}
+\clearpage
+\subsection{プログラムによる周波数スイープ自動化}
+先行研究では，ワイヤレス給電の周波数スイープをArduinoだけで実行した．しかしArduinoだけでは周波数や時間を変更する時，わざわざコンパイルしなければならず面倒であった．そこで本研究では周波数スイープの周波数を送る，ワイヤレス給電の電力を受け取る作業をpythonで自動化させるようにした．\\
+	一連の操作は以下の箇条書きと図\ref{fig:zidouka}のとおりである．
+ \begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.4]{huro.png}
+	\caption{周波数スイープ自動化のフローチャート}
+	\label{fig:zidouka}
+\end{figure}
+	\begin{enumerate}
+		\item pythonによって送られてきた周波数の値を送電側のArduinoで，ワイヤレス給電回路の中にある短形波を出力することができるクロックジェネレータへ指定した周波数を送る．
+		\item 乗算器によって出力された電力を送電側・受電側のArduinoにデューティー比で送る．また送られたデューティー比を電力に直す．
+		\item 電力をpythonへ送りデータを保存する．また自分が指定した時間が経ったら周波数を変えて，送りなおす．
+		\item 1～３までの一連の操作を最後の周波数になるまで送り続ける．
+	\end{enumerate}
+	以上のような流れですべての周波数の時の電力の測定をする．また，最初の周波数，最後の周波数，周波数をなんHzずつ見るための加算する周波数，一つの周波数の電力を測定する時間をGUIで入力できるようにした．次の図(\ref{fig:gui})は本実験において使用したGUIである．また作成したpythonとarduinoのプログラムは本論文の付録に書かれている．
+ \begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.5]{gui.png}
+	\caption{電力測定するためのGUI}
+	\label{fig:gui}
+\end{figure}
+\clearpage
 \section{実験結果}
-
-\section{考察}
-
-\section{結論}
-
-\section{今後の展望}
-
+\clearpage
+\section{結言}
+\subsection{考察}
+\subsection{結論}
+\clearpage
+\subsection{今後の展望}
 \clearpage
 \section{謝辞}
  本研究の進行や本論文等の執筆にあたり，ご指導いただいた穂高一条教授に感謝の意を示すとともに深く御礼申し上げます．
@@ -261,6 +357,7 @@ v_s=0.1i
 	\bibitem{morita}盛田穣文："ワイヤレス給電システムの効率と電力の最適化について", 宮崎大学修士論文,　平成29年度
 	\bibitem{ito}伊東雅浩："短径波入力による高効率ワイヤレス給電の制御について", 宮崎大学修士論文,　平成30年度
 	\bibitem{syourai}B\&PLUS:"ワイヤレス給電の現状と未来"，https://www.b-plus-kk.jp/about/mechanism.html 最終アクセス：2020/1/23
+	\bibitem{denki}電気の資格とお勉強:"RLC直列共振回路", https://eleking.net/study/s-accircuit/sac-resonant-rlcs.html　最終アクセス：2020/2/01
 \end{thebibliography}
 \clearpage
 \section{付録}
@@ -271,7 +368,7 @@ v_s=0.1i
 	\caption{ワイヤレス給電回路図}
 	\label{fig:wpt_kairo2}
 \end{figure}
-図(\ref{fig:wpt_kairo2})の定数と電源の値を$u$として与えると，オームの法則とキルヒホッフの法則より，
+図\ref{fig:wpt_kairo2}の定数と電源の値を$u$として与えると，オームの法則とキルヒホッフの法則より，
 \setcounter{equation}{0}
 \begin{eqnarray}
 \label{eq:ohm1}
@@ -366,7 +463,21 @@ i_2\\
 \label{eq:zyoutai}
 \dot{x}=Ax+Bu
 \end{gather}
-となり式(\ref{eq:zyoutai})はワイヤレス給電の状態方程式となる．
+となり,式\ref{eq:zyoutai}はワイヤレス給電の状態方程式となる．
+\subsection{オペアンプについて}
+\begin{figure}[H]
+	\centering
+	\includegraphics[]{senkou.png}
+	\caption{計装用増幅回路}
+	\label{fig:zouhuku}
+\end{figure}
+　図\ref{fig:zouhuku}のように先行研究では計装用増幅回路を組み込んだオペアンプを使用した．しかしこの回路での出力は出力前と出力後で大きなずれが生じ，乗算器でうまく乗算することができない欠点があった．また周波数を上げるほど本来上げるべき倍率である100倍にうまく出力されない欠点(周波数が高ければ高いほど出力される倍率が小さくなった)もあった．\\　そこでそこで今研究ではオペアンプを先行研究のように接続するのではなく，図(\ref{fig:hanten2})反転増幅回路を二つつなげて作った回路を使用した．また入力値と出力値とのずれを抑えるため$1000pF$程のコンデンサを入れることによりずれを防ぐようにした．
+　\begin{figure}[H]
+　	\centering
+　	\includegraphics[]{hanten2.png}
+　	\caption{反転増幅回路回路図}
+　	\label{fig:hanten2}
+　\end{figure}
 \subsection{プログラムについて}
 前章に示された通り先行研究では周波数を変更する方法で，わざわざArduinoのプログラムの一部を変更して再コンパイルさせ出力結果をシリアルモニターに表示させる方法であった．その面倒を省くためpythonを利用して周波数をarduinoに送り，arduinoの出力結果をデータに保存させるGUIを作成した．以下のプログラムはGUIで周波数をarduinoへシリアル通信で送信してarduinoに出力されたデータをシリアル通信でpython側に送る流れをするための，それぞれGUIのpythonプログラムと送電側のマイコンのarduinoプログラム，受電側のarduinoプログラムである．なお，pythonのプログラムにおいてGUIを作成にtkinterを使用した．tkinterの使用方法並びにpythonの使い方については参考文献：\cite{tkinter}を参考にした．
 \lstset{
@@ -685,132 +796,125 @@ root.after(100,maindef)
 root.mainloop()   
 	\end{lstlisting}
 	\begin{lstlisting}[caption=送電側arduino, label=program2]
-	#include <si5351.h>
-	#include <Wire.h>
-	#include<MsTimer2.h>
-	Si5351 si5351;
-	
-	unsigned long long freq = 5000000ULL;         
-	  /*出力周波数50kHz(これをいじって周波数を変える)freq×0.01=周波数Hz*/
-	unsigned long long pll_freq = 70500000000ULL;   
-	/*PLL周波数(いじるな)*/
-	
-	String data;
-	float data0 = 0;
-	float f = 0;
-	
-	void setup() {
-	
-	Serial.begin(57600);
-	MsTimer2::set(100, flash);
-	
-	bool i2c_found;                                        
-	 /*I2C通信ができるかどうかブール値を入れる変数*/
-	i2c_found = si5351.init(SI5351_CRYSTAL_LOAD_8PF, 0, 0); 
-	 /*I2C通信を確認(ライブラリreadme参照)*/
-	if (!i2c_found) {
-	Serial.println("Error:I2C");
-	}
-	
-	si5351.init(SI5351_CRYSTAL_LOAD_8PF, 0, 0);             
-	/*振動子負荷容量(使うモジュールが8pFなのでこれ)*/
-	si5351.set_freq_manual(freq, pll_freq, SI5351_CLK0); 
-	   /*出力周波数,PLL周波数,設定先出力ピン設定*/
-	si5351.set_phase(SI5351_CLK0, 0);                      
-	 /*位相(今回特に意味はない)*/
-	si5351.pll_reset(SI5351_PLLA);                         
-	 /*PLLをリセット（使う前に一回リセット）*/
-	si5351.update_status();                                
-	 /*si5351のステータスを読む(今回特に使っていない)*/
-	
-	while (Serial.available() == 0);
-	}
-	
-	
-	
-	
-	void flash(void) {
-	int i = analogRead(0);
-	f = i * 5.0 / 1023.0;
-	Serial.println(f);
-	}
-	
-	void loop() {
-	char aizu = Serial.read();
-	if (aizu == 'a') {
-	MsTimer2::stop();
-	 //新しいduty比に変更されるまでflash関数を止める
-	aizu = 'c';
-	receive_duty_data();
-	MsTimer2::start();
-	}
-	
-	else if (aizu == 'b') {
-	MsTimer2::stop();
-	si5351.set_freq(400000, SI5351_CLK0);  
-	  /*信号を止める*/          
-	    /*!!!!!set_freq(0)!!!これでは止まらない!!!!!*/
-	}
-	
-	else if (aizu == 'c') {
-	//pass
-	}
-	}
-	
-	void receive_duty_data() {
-	data = Serial.readString();
-	data0 = data.toFloat();
-	unsigned long long freq = data0 * 100000;
-	 /*1=0.01Hzなので末尾に00をつける.入力単位をキロにしたいので末尾に10^3をつける．*/
-	si5351.set_freq(freq, SI5351_CLK0);      
-	 /*周波数セット*/
-	si5351.pll_reset(SI5351_PLLA);           
-	 /*念のためPLLをリセット*/
-	si5351.update_status();
-	}
+
+#include <si5351.h>
+#include <Wire.h>
+#include<MsTimer2.h>
+Si5351 si5351;
+
+unsigned long long freq = 5000000ULL;           
+/*出力周波数50kHz(これをいじって周波数を変える)freq×0.01=周波数Hz*/
+unsigned long long pll_freq = 70500000000ULL;   /*PLL周波数(いじるな)*/
+
+String data;
+float data0 = 0;
+float f = 0;
+
+void setup() {
+
+Serial.begin(57600);
+MsTimer2::set(100, flash);
+
+bool i2c_found;                                         
+/*I2C通信ができるかどうかブール値を入れる変数*/
+i2c_found = si5351.init(SI5351_CRYSTAL_LOAD_8PF, 0, 0); 
+ /*I2C通信を確認(ライブラリreadme参照)*/
+if (!i2c_found) {
+Serial.println("Error:I2C");
+}
+
+si5351.init(SI5351_CRYSTAL_LOAD_8PF, 0, 0);            
+ /*振動子負荷容量(使うモジュールが8pFなのでこれ)*/
+si5351.set_freq_manual(freq, pll_freq, SI5351_CLK0);   
+ /*出力周波数,PLL周波数,設定先出力ピン設定*/
+si5351.set_phase(SI5351_CLK0, 0);                      
+ /*位相(今回特に意味はない)*/
+si5351.pll_reset(SI5351_PLLA);                         
+ /*PLLをリセット（使う前に一回リセット）*/
+si5351.update_status();                                
+ /*si5351のステータスを読む(今回特に使っていない)*/
+
+while (Serial.available() == 0);
+}
+
+
+
+
+void flash(void) {
+int i = analogRead(0);
+f = i * 5.0 / 1023.0;
+Serial.println(f,4);
+//有効数字を4桁にする．
+//シリアルモニターは初期設定では小数第二位までしか読み取れないから.
+}
+
+void loop() {
+char aizu = Serial.read();
+if (aizu == 'a') {
+MsTimer2::stop(); //新しいduty比に変更されるまでflash関数を止める
+aizu = 'c';
+receive_duty_data();
+MsTimer2::start();
+}
+
+else if (aizu == 'b') {
+MsTimer2::stop();
+si5351.set_freq(400000, SI5351_CLK0);  
+  /*信号を止める*/            /*!!!!!set_freq(0)!!!これでは止まらない!!!!!*/
+}
+
+else if (aizu == 'c') {
+//pass
+}
+}
+
+void receive_duty_data() {
+data = Serial.readString();
+data0 = data.toFloat();
+unsigned long long freq = data0 * 100000; 
+/*1=0.01Hzなので末尾に00をつける.入力単位をキロにしたいので末尾に10^3をつける．*/
+si5351.set_freq(freq, SI5351_CLK0);       /*周波数セット*/
+si5351.pll_reset(SI5351_PLLA);            /*念のためPLLをリセット*/
+si5351.update_status();
+}
 	
 	\end{lstlisting}
 	\begin{lstlisting}[caption=受電側arduino, label=program3]
-	#include<MsTimer2.h>
-	
-	float f = 0;
-	String data;
-	float data0 = 0;
-	
-	void setup() {
-	Serial.begin(57600);
-	MsTimer2::set(100,flash);
-	while(Serial.available() == 0);
-	}
-	
-	void flash(void){
-	int i = analogRead(0);
-	f = i * 5.0 / 1023.0;
-	Serial.println(f);
-	}
-	
-	void loop() {
-	char aizu = Serial.read();
-	
-	if(aizu == 'a'){
-	MsTimer2::stop();
-	aizu = 'c';
-	receive_duty_data();
-	MsTimer2::start();
-	}
-	
-	else if(aizu == 'b'){
-	MsTimer2::stop();
-	aizu='c';
-	}
-	
-	}
-	
-	void receive_duty_data() {
-	
-	data = Serial.readString();
-	data0 = data.toFloat();
-	}
+#include<MsTimer2.h>
+float f = 0;
+String data;
+float data0 = 0;
+void setup() {
+Serial.begin(57600);
+MsTimer2::set(100,flash);
+while(Serial.available() == 0);
+}
+void flash(void){
+int i = analogRead(0);
+f = i * 5.0 / 1023.0;
+Serial.println(f,4);
+//有効数字を4桁にする．
+//シリアルモニターは初期設定では小数第二位までしか読み取れないから.
+}
+void loop() {
+char aizu = Serial.read();
+if(aizu == 'a'){
+MsTimer2::stop();
+aizu = 'c';
+receive_duty_data();
+MsTimer2::start();
+}
+else if(aizu == 'b'){
+MsTimer2::stop();
+aizu='c';
+}
+
+}
+void receive_duty_data() {
+
+data = Serial.readString();
+data0 = data.toFloat();
+}
 	\end{lstlisting}
 	% ソースコードが別ファイルの場合
 
