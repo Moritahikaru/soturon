@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.8.3-191112-2.6 (utf8.sjis) (TeX Live 2019/W32TeX) (preloaded format=platex 2019.12.11)  2 FEB 2020 17:17
+This is e-pTeX, Version 3.14159265-p3.8.3-191112-2.6 (utf8.sjis) (TeX Live 2019/W32TeX) (preloaded format=platex 2019.12.11)  3 FEB 2020 06:17
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -548,11 +548,7 @@ LaTeX Font Info:    Trying to load font information for U+txsyc on input line 2
 
 (c:/w32tex/share/texmf-dist/tex/latex/txr/utxsyc.fd
 File: utxsyc.fd 2000/12/15 v3.1
-))
-\tf@toc=\write4
-\openout4 = `2019soturon.toc'.
-
-
+)
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
 Make it at least 16.49998pt.
@@ -561,16 +557,20 @@ This may cause the page layout to be inconsistent, however.
 
 [2
 
-]
+])
+\tf@toc=\write4
+\openout4 = `2019soturon.toc'.
+
+ [3]
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <14.4> not available
 (Font)              Font shape `JT1/gt/m/n' tried instead on input line 56.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <14.4> not available
 (Font)              Font shape `JY1/gt/m/n' tried instead on input line 56.
- [3
-
-] [4
+ [4
 
 ] [5
+
+] [6
 
 ]
 File: wpt_2020128.png Graphic file (type bmp)
@@ -582,57 +582,57 @@ File: omstxr.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Font shape `OMS/txr/m/n' in size <12> not available
 (Font)              Font shape `OMS/txsy/m/n' tried instead on input line 96.
- [6
-
-]
-File: RLC.png Graphic file (type bmp)
-<RLC.png>
 
 [7
 
 ]
+File: RLC.png Graphic file (type bmp)
+<RLC.png>
+ [8
+
+]
 File: RLCkyousin.png Graphic file (type bmp)
 <RLCkyousin.png>
- [8]
+ [9]
 Overfull \hbox (3.6679pt too wide) detected at line 217
 []
  []
 
-[9]
+[10]
 Overfull \hbox (35.75589pt too wide) detected at line 225
 []
  []
 
-[10] [11]
+[11] [12]
 File: 191127shunt.png Graphic file (type bmp)
 <191127shunt.png>
 File: 191127zouhuku.png Graphic file (type bmp)
 <191127zouhuku.png>
- [12
+ [13
 
 ]
 File: op_multi.JPG Graphic file (type bmp)
 <op_multi.JPG>
- [13]
+ [14]
 File: freqency_sweep.png Graphic file (type bmp)
 <freqency_sweep.png>
- [14
+ [15
 
 ]
 File: huro.png Graphic file (type bmp)
 <huro.png>
 File: gui.png Graphic file (type bmp)
 <gui.png>
- [15
+ [16
 
-] [16] [17
+] [17] [18
 
 ]
 File: koiru.JPG Graphic file (type bmp)
 <koiru.JPG>
 File: IMG_0737.JPG Graphic file (type bmp)
 <IMG_0737.JPG>
- [18
+ [19
 
 ]
 
@@ -641,71 +641,72 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[19] [20]
+[20] [21]
 File: シミュレーション電力.png Graphic file (type bmp)
 <シミュレーション電力.png>
 File: kouritusimu.png Graphic file (type bmp)
 <kouritusimu.png>
 File: saitekidousasimu.png Graphic file (type bmp)
 <saitekidousasimu.png>
- [21
+ [22
 
-] [22]
+] [23]
 File: not_nouritu_w.png Graphic file (type bmp)
 <not_nouritu_w.png>
 File: notkouritu.png Graphic file (type bmp)
 <notkouritu.png>
 File: not_nouritu_dousa.png Graphic file (type bmp)
 <not_nouritu_dousa.png>
- [23
+ [24
 
 ]
 File: nouritu_w.png Graphic file (type bmp)
 <nouritu_w.png>
 File: nouritu_kou.png Graphic file (type bmp)
 <nouritu_kou.png>
- [24]
+ [25]
 File: nouritu_dousa.png Graphic file (type bmp)
 <nouritu_dousa.png>
- [25] [26] [27
+ [26] [27]
+File: simuhikaku.png Graphic file (type bmp)
+<simuhikaku.png>
+ [28
 
-] [28
-
-]
-Underfull \hbox (badness 10000) in paragraph at lines 526--527
+] [29]
+Underfull \hbox (badness 10000) in paragraph at lines 540--541
 []\JY1/mc/m/n/12 ロ ーム株式会社 ： ” ワイヤレス給電とは ” ーエレクトロニクス
 豆知
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 526--527
+Underfull \hbox (badness 10000) in paragraph at lines 540--541
 \JY1/mc/m/n/12 識\OT1/txr/m/n/12 , https://www.rohm.co.jp/electronics-basics/wi
 reless-charging/wireless-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 533--534
+Underfull \hbox (badness 10000) in paragraph at lines 547--548
 []\OT1/txr/m/n/12 B&PLUS:"\JY1/mc/m/n/12 ワイヤレス給電の現状と未来\OT1/txr/m/n
 /12 "\JY1/mc/m/n/12 ， \OT1/txr/m/n/12 https://www.b-plus-
  []
 
-[29
+[30
 
-] [30]
+] [31]
 File: wpt_2020128.png Graphic file (type bmp)
 <wpt_2020128.png>
- [31
+ [32
 
 ]
 File: senkou.png Graphic file (type bmp)
 <senkou.png>
- [32]
+ [33]
 File: hanten2.png Graphic file (type bmp)
 <hanten2.png>
- [33] (I search kanjifont definition file: . . )
+ [34] (I search kanjifont definition file: . . )
 (I search font definition file: . . . . . . . )
 LaTeX Font Info:    Trying to load font information for OT1+txtt on input line 
-677.
+691.
 
 (c:/w32tex/share/texmf-dist/tex/latex/txr/ot1txtt.fd
 File: ot1txtt.fd 2000/12/15 v3.1
@@ -713,39 +714,39 @@ File: ot1txtt.fd 2000/12/15 v3.1
 (I search kanjifont definition file: . . ) (I search font definition file: . .
 . . . . . )
 LaTeX Font Info:    Trying to load font information for OT1+txss on input line 
-678.
+692.
  (c:/w32tex/share/texmf-dist/tex/latex/txr/ot1txss.fd
 File: ot1txss.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Font shape `OT1/txss/m/n' will be
-(Font)              scaled to size 5.69998pt on input line 678.
- [34] [35]
-Overfull \hbox (53.38731pt too wide) in paragraph at lines 816--817
+(Font)              scaled to size 5.69998pt on input line 692.
+ [35] [36]
+Overfull \hbox (53.38731pt too wide) in paragraph at lines 830--831
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-[36]
-Overfull \hbox (5.38683pt too wide) in paragraph at lines 886--887
+[37]
+Overfull \hbox (5.38683pt too wide) in paragraph at lines 900--901
 [][][][][][][][][][][][][][][][][][][] 
  []
 
-[37]
-Overfull \hbox (0.58678pt too wide) in paragraph at lines 917--918
+[38]
+Overfull \hbox (0.58678pt too wide) in paragraph at lines 931--932
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-[38] [39] [40] (./2019soturon.aux)
+[39] [40] [41] (./2019soturon.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 6534 strings out of 492749
- 87073 string characters out of 6141886
- 211766 words of memory out of 5000000
- 10815 multiletter control sequences out of 15000+600000
+ 6541 strings out of 492749
+ 87201 string characters out of 6141886
+ 211790 words of memory out of 5000000
+ 10820 multiletter control sequences out of 15000+600000
  25805 words of font info for 86 fonts, out of 8000000 for 9000
  929 hyphenation exceptions out of 8191
  34i,14n,45p,685b,1809s stack positions out of 5000i,500n,10000p,500000b,80000s
 
-Output written on 2019soturon.dvi (40 pages, 254732 bytes).
+Output written on 2019soturon.dvi (41 pages, 259588 bytes).
