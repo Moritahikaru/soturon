@@ -75,6 +75,12 @@
 \subsection*{緒言}
 	本研究の背景および，研究目的をこの章で述べる．
 \subsection*{本研究での基礎理論と原理}　ワイヤレス給電についての原理，または本研究において扱うワイヤレス給電測定による基礎理論についてを述べる．
+\subsection*{実験内容}
+	本研究で使用した実験道具の条件，プログラム・システムについての説明，計測前のシミュレーション結果についてをこの章で述べる．
+\subsection*{実験結果}
+	本研究の実験結果について述べる．
+\subsection*{結言}
+	実験結果に対しての考察, 今後の展望について述べる．
 \clearpage
 \section{本研究での基礎理論と原理}
 \subsection{ワイヤレス給電の原理}
@@ -136,6 +142,7 @@
 式(\ref{eq:f_0})から$f_0を解くと$
 \begin{eqnarray}
 f_0=\frac{1}{2 \pi\sqrt{LC}}
+\label{eq:kyousin}
 \end{eqnarray}
 となる．
 \\　式(\ref{eq:R}),図\ref{fig:RLCkyosin}からRLC直列回路が共振周波数近づくほどインピーダンスが小さくなり遠くなるほど大きくなる．インピーダンスが小さいと電流が大きくなる．したがって周波数が共振周波数のとき最も電力が大きいことが分かる．
@@ -299,7 +306,7 @@ W=\frac{(X1-X2)(Y1-Y2)}{10}+Z \nonumber \\
 となり実験中で電力を求めることができる．
 \begin{figure}[H]
 	\centering
-	\includegraphics[scale=0.1]{op_multi.JPG}
+	\includegraphics[scale=0.1,angle=180]{op_multi.JPG}
 	\caption{オペアンプー乗算器回路}
 	\label{fig:op_multi}
 \end{figure}
@@ -350,7 +357,7 @@ W=\frac{(X1-X2)(Y1-Y2)}{10}+Z \nonumber \\
 この値が高い数値であればあるほど最適動作周波数だといえる．
 \subsection{能率的な周波数スイープ}
 \subsubsection*{時間・加算周波数決定}
-先行研究では，一つの周波数を送って測定するまでの時間を10秒で測定した．しかし，今研究においては多くの周波数を測りたいがためあまり時間をかけたくないから10秒では多すぎると考える．逆に測定時間を短くしすぎると出力される電力が周期的になるまで時間がかかるので周期的になる前に出力される．また低周波ずつ上げると確かに正確に測ることが可能だが同じく時間がかかる．逆に大雑把に周波数を取りすぎると最適周波数が分からなくなる．したがって周波数スイープが能率的になる周波数の測定時間と，加算周波数の量を事前に決めておく必要がある．事前に決めた数値は表\ref{tab:hyo1}である．
+先行研究では，一つの周波数を送って測定するまでの時間を10秒で測定した．しかし，今研究においては多くの周波数を測りたいがためあまり時間をかけたくないから10秒では多すぎると考える．逆に測定時間を短くしすぎると出力される電力が周期的になるまで時間がかかるので周期的になる前に出力される．また低周波ずつ上げると確かに正確に測ることが可能だが同じく時間がかかる．逆に大雑把に周波数を取りすぎると最適周波数が分からなくなる．したがって周波数スイープが能率的になる周波数の測定時間と，加算周波数の量を事前に決めておく必要がある．事前に決めた数値は表\ref{tab:hyo1}である.
 \begin{table}[h]
 	\centering
 	\caption{測定時間・加算周波数決定値}
@@ -368,7 +375,20 @@ W=\frac{(X1-X2)(Y1-Y2)}{10}+Z \nonumber \\
 	\caption{実験コイル}
 	\label{fig:koiru}
 \end{figure}
-本研究においてコイルは図\ref{fig:koiru}のものを使った．なおコイルは前々度の卒業研究(参考文献\cite{goizuka})で使われたものである．また，以下の表\ref{tab:koiru}において実験コイルの本体・インダクタンスのパラメータ，使用素子のパラメータの実験条件を示す．(参考文献：\cite{goizuka})
+本研究においてコイルは図\ref{fig:koiru}のものを使った．なおコイルは前々度の卒業研究(参考文献\cite{goizuka})で使われたものである．また，以下の表\ref{tab:koiru}において実験コイルの本体・インダクタンスのパラメータ，使用素子のパラメータの実験条件を示す．(参考文献：\cite{goizuka})また今回使用したクロックジェネレーター(図\ref{fig:clk})はおよそ4kHzより下の周波数は出力されないという性能も考慮して測定範囲は5kHzから100kHzとする．
+また実験回路の共振周波数は式(\ref{eq:kyousin})，表\ref{tab:indact},表\ref{tab:sosi}より，送受電同じく，
+\begin{equation}
+f_0=\frac{1}{2\pi\sqrt{23.6\mu \times 108n}} 
+\\=99.7kHz
+\label{eq:99.6k}
+\end{equation}
+
+ \begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.1,angle=180]{IMG_0737.JPG}
+	\caption{クロックジェネレーター}
+	\label{fig:clk}
+\end{figure}
 \begin{table}[h]
 	\caption{実験コイル}
 	\centering
@@ -416,11 +436,83 @@ W=\frac{(X1-X2)(Y1-Y2)}{10}+Z \nonumber \\
 	\end{tabular}
 \end{table}
 \clearpage
+\subsection{シミュレーション}
+実験をする前に事前にシミュレートしてみた．図\ref{fig:simulatew}から図\ref{fig:simulatesaiteki}はそれぞれ電力出力，効率，最適動作判定の結果である．．図\ref{fig:simulatesaiteki}からもわかる通りに，共振周波数は式(\ref{eq:99.6k})の近くの時，最適動作判定が最大だということが分かる．
+ \begin{figure}[H]
+	\centering
+	\includegraphics[scale=1]{シミュレーション電力.png}
+	\caption{シミュレーション出力電力}
+	\label{fig:simulatew}
+\end{figure}
+ \begin{figure}[H]
+	\centering
+	\includegraphics[scale=1]{kouritusimu.png}
+	\caption{シミュレーションでの効率}
+	\label{fig:simulatekou}
+\end{figure}
+ \begin{figure}[H]
+	\centering
+	\includegraphics[scale=1]{saitekidousasimu.png}
+	\caption{シミュレーションでの最適動作判定}
+	\label{fig:simulatesaiteki}
+\end{figure}
+\clearpage
 \section{実験結果}
+\subsection{能率化してない周作数スイープ}
+能率的な周波数スイープの比較材料として，能率化していない周波数スイープの場合も測定した．それぞれ図\ref{fig:not_nourituw},図 \ref{fig:not_nouritu_kou},図\ref{fig:not_nouritu_dousa}測定に用いた数値を表\ref{tab:not_nouritu}にある．
+\begin{table}[H]
+	\centering
+	\label{tab:not_nouritu}
+	\caption{能率化していない周波数スイープ測定時間と加算周波数}
+	\begin{tabular}{|l|l|}
+		\hline
+		測定時間  & 10s \\ \hline
+		加算周波数 & 1k  \\ \hline
+	\end{tabular}
+\end{table}
+ \begin{figure}[H]
+	\centering
+	\includegraphics[]{not_nouritu_w.png}
+	\caption{周波数と出力電力との関係}
+	\label{fig:not_nourituw}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[]{notkouritu.png}
+	\caption{周波数と効率の関係}
+	\label{fig:not_nouritu_kou}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[]{not_nouritu_dousa.png}
+	\caption{最適動作判定}
+	\label{fig:not_nouritu_dousa}
+\end{figure}
+シミュレーションの結果と比べて送電側・受電側双方の電力が小さい値で出力された．
+\subsection{能率的な周波数スイープ}
+測定結果を以下のグラフに示す．
+\begin{figure}[H]
+\centering
+\includegraphics[]{nouritu_w.png}
+\caption{周波数と出力電力との関係}
+\label{fig:nourituw}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[]{nouritu_kou.png}
+	\caption{周波数と効率の関係}
+	\label{fig:nouritu_kou}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[]{nouritu_dousa.png}
+	\caption{最適動作判定}
+	\label{fig:nouritu_dousa}
+\end{figure}
 \clearpage
 \section{結言}
 \subsection{考察}
-\subsection{結論}
+
 \clearpage
 \subsection{今後の展望}
 \clearpage
