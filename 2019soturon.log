@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.8.3-191112-2.6 (utf8.sjis) (TeX Live 2019/W32TeX) (preloaded format=platex 2019.12.11)  3 FEB 2020 06:17
+This is e-pTeX, Version 3.14159265-p3.8.3-191112-2.6 (utf8.sjis) (TeX Live 2019/W32TeX) (preloaded format=platex 2019.12.11)  3 FEB 2020 22:46
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -576,12 +576,12 @@ LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <14.4> not available
 File: wpt_2020128.png Graphic file (type bmp)
 <wpt_2020128.png>
 LaTeX Font Info:    Trying to load font information for OMS+txr on input line 9
-6.
+5.
  (c:/w32tex/share/texmf-dist/tex/latex/txr/omstxr.fd
 File: omstxr.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Font shape `OMS/txr/m/n' in size <12> not available
-(Font)              Font shape `OMS/txsy/m/n' tried instead on input line 96.
+(Font)              Font shape `OMS/txsy/m/n' tried instead on input line 95.
 
 [7
 
@@ -594,12 +594,12 @@ File: RLC.png Graphic file (type bmp)
 File: RLCkyousin.png Graphic file (type bmp)
 <RLCkyousin.png>
  [9]
-Overfull \hbox (3.6679pt too wide) detected at line 217
+Overfull \hbox (3.6679pt too wide) detected at line 216
 []
  []
 
 [10]
-Overfull \hbox (35.75589pt too wide) detected at line 225
+Overfull \hbox (35.75589pt too wide) detected at line 224
 []
  []
 
@@ -673,19 +673,19 @@ File: simuhikaku.png Graphic file (type bmp)
  [28
 
 ] [29]
-Underfull \hbox (badness 10000) in paragraph at lines 540--541
+Underfull \hbox (badness 10000) in paragraph at lines 539--540
 []\JY1/mc/m/n/12 ロ ーム株式会社 ： ” ワイヤレス給電とは ” ーエレクトロニクス
 豆知
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 540--541
+Underfull \hbox (badness 10000) in paragraph at lines 539--540
 \JY1/mc/m/n/12 識\OT1/txr/m/n/12 , https://www.rohm.co.jp/electronics-basics/wi
 reless-charging/wireless-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 547--548
+Underfull \hbox (badness 10000) in paragraph at lines 546--547
 []\OT1/txr/m/n/12 B&PLUS:"\JY1/mc/m/n/12 ワイヤレス給電の現状と未来\OT1/txr/m/n
 /12 "\JY1/mc/m/n/12 ， \OT1/txr/m/n/12 https://www.b-plus-
  []
@@ -706,7 +706,7 @@ File: hanten2.png Graphic file (type bmp)
  [34] (I search kanjifont definition file: . . )
 (I search font definition file: . . . . . . . )
 LaTeX Font Info:    Trying to load font information for OT1+txtt on input line 
-691.
+690.
 
 (c:/w32tex/share/texmf-dist/tex/latex/txr/ot1txtt.fd
 File: ot1txtt.fd 2000/12/15 v3.1
@@ -714,24 +714,24 @@ File: ot1txtt.fd 2000/12/15 v3.1
 (I search kanjifont definition file: . . ) (I search font definition file: . .
 . . . . . )
 LaTeX Font Info:    Trying to load font information for OT1+txss on input line 
-692.
+691.
  (c:/w32tex/share/texmf-dist/tex/latex/txr/ot1txss.fd
 File: ot1txss.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Font shape `OT1/txss/m/n' will be
-(Font)              scaled to size 5.69998pt on input line 692.
+(Font)              scaled to size 5.69998pt on input line 691.
  [35] [36]
-Overfull \hbox (53.38731pt too wide) in paragraph at lines 830--831
+Overfull \hbox (53.38731pt too wide) in paragraph at lines 829--830
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 [37]
-Overfull \hbox (5.38683pt too wide) in paragraph at lines 900--901
+Overfull \hbox (5.38683pt too wide) in paragraph at lines 899--900
 [][][][][][][][][][][][][][][][][][][] 
  []
 
 [38]
-Overfull \hbox (0.58678pt too wide) in paragraph at lines 931--932
+Overfull \hbox (0.58678pt too wide) in paragraph at lines 930--931
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
@@ -747,6 +747,6 @@ Here is how much of TeX's memory you used:
  10820 multiletter control sequences out of 15000+600000
  25805 words of font info for 86 fonts, out of 8000000 for 9000
  929 hyphenation exceptions out of 8191
- 34i,14n,45p,685b,1809s stack positions out of 5000i,500n,10000p,500000b,80000s
+ 34i,14n,45p,737b,1809s stack positions out of 5000i,500n,10000p,500000b,80000s
 
-Output written on 2019soturon.dvi (41 pages, 259588 bytes).
+Output written on 2019soturon.dvi (41 pages, 259744 bytes).
