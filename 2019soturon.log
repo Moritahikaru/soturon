@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.8.3-191112-2.6 (utf8.sjis) (TeX Live 2019/W32TeX) (preloaded format=platex 2019.12.11)  3 FEB 2020 22:46
+This is e-pTeX, Version 3.14159265-p3.8.3-191112-2.6 (utf8.sjis) (TeX Live 2019/W32TeX) (preloaded format=platex 2019.12.11)  4 FEB 2020 14:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -673,19 +673,19 @@ File: simuhikaku.png Graphic file (type bmp)
  [28
 
 ] [29]
-Underfull \hbox (badness 10000) in paragraph at lines 539--540
+Underfull \hbox (badness 10000) in paragraph at lines 540--541
 []\JY1/mc/m/n/12 ロ ーム株式会社 ： ” ワイヤレス給電とは ” ーエレクトロニクス
 豆知
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 539--540
+Underfull \hbox (badness 10000) in paragraph at lines 540--541
 \JY1/mc/m/n/12 識\OT1/txr/m/n/12 , https://www.rohm.co.jp/electronics-basics/wi
 reless-charging/wireless-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 546--547
+Underfull \hbox (badness 10000) in paragraph at lines 547--548
 []\OT1/txr/m/n/12 B&PLUS:"\JY1/mc/m/n/12 ワイヤレス給電の現状と未来\OT1/txr/m/n
 /12 "\JY1/mc/m/n/12 ， \OT1/txr/m/n/12 https://www.b-plus-
  []
@@ -706,7 +706,7 @@ File: hanten2.png Graphic file (type bmp)
  [34] (I search kanjifont definition file: . . )
 (I search font definition file: . . . . . . . )
 LaTeX Font Info:    Trying to load font information for OT1+txtt on input line 
-690.
+691.
 
 (c:/w32tex/share/texmf-dist/tex/latex/txr/ot1txtt.fd
 File: ot1txtt.fd 2000/12/15 v3.1
@@ -714,24 +714,24 @@ File: ot1txtt.fd 2000/12/15 v3.1
 (I search kanjifont definition file: . . ) (I search font definition file: . .
 . . . . . )
 LaTeX Font Info:    Trying to load font information for OT1+txss on input line 
-691.
+692.
  (c:/w32tex/share/texmf-dist/tex/latex/txr/ot1txss.fd
 File: ot1txss.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Font shape `OT1/txss/m/n' will be
-(Font)              scaled to size 5.69998pt on input line 691.
+(Font)              scaled to size 5.69998pt on input line 692.
  [35] [36]
-Overfull \hbox (53.38731pt too wide) in paragraph at lines 829--830
+Overfull \hbox (53.38731pt too wide) in paragraph at lines 830--831
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 [37]
-Overfull \hbox (5.38683pt too wide) in paragraph at lines 899--900
+Overfull \hbox (5.38683pt too wide) in paragraph at lines 900--901
 [][][][][][][][][][][][][][][][][][][] 
  []
 
 [38]
-Overfull \hbox (0.58678pt too wide) in paragraph at lines 930--931
+Overfull \hbox (0.58678pt too wide) in paragraph at lines 931--932
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
@@ -741,12 +741,12 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 6541 strings out of 492749
- 87201 string characters out of 6141886
+ 6540 strings out of 492749
+ 87192 string characters out of 6141886
  211790 words of memory out of 5000000
- 10820 multiletter control sequences out of 15000+600000
+ 10819 multiletter control sequences out of 15000+600000
  25805 words of font info for 86 fonts, out of 8000000 for 9000
  929 hyphenation exceptions out of 8191
- 34i,14n,45p,737b,1809s stack positions out of 5000i,500n,10000p,500000b,80000s
+ 34i,14n,45p,739b,1809s stack positions out of 5000i,500n,10000p,500000b,80000s
 
-Output written on 2019soturon.dvi (41 pages, 259744 bytes).
+Output written on 2019soturon.dvi (41 pages, 259764 bytes).
