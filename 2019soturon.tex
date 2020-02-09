@@ -92,9 +92,9 @@
 本研究で扱うワイヤレス給電の回路は図\ref{fig:wpt_kairo}で示される．図\ref{fig:wpt_kairo}に示すように，ワイヤレス給電は送電側と受電側が電気的につながっていないことが分かる．送電側の交流電源の電流が時間的に変化することにより受電側の磁束が変化しファラデーの電磁誘導の法則より受電側に誘導起電力が生じ誘導電流を伝えるという原理である．図\ref{fig:wpt_kairo}の回路素子は以下の通りである．
 \begin{quote}
 	\begin{itemize}
-		\item L1:送電側のコイルの自己インダクタンス．
-		\item L2:受電側のコイルの自己インダクタンス．
-		\item M:送電側と受電側のコイルの相互インダクタンス．
+		\item L1:送電側のコイルの自己インダクタンス
+		\item L2:受電側のコイルの自己インダクタンス
+		\item M:送電側と受電側のコイル間の相互インダクタンス
 		\item R1:送電側コイルの内部抵抗
 		\item R2:受電側コイルの内部抵抗
 		\item C1:送電側のコンデンサの電気容量
@@ -105,7 +105,7 @@
 \end{quote}
 \clearpage
 \subsection{共振周波数}
-　周波数と電力の関係として，共振周波数について説明する．共振周波数は回路が共振するときの周波数である．本研究において図\ref{fig:RLC}のRLC直列回路を使用する．この場合はRLC直列回路の共振周波数になる．
+　周波数と電力の関係として，共振周波数について説明する．共振周波数は回路が電圧と電流が極値をとるときの周波数である．本研究において図\ref{fig:RLC}のRLC直列回路を使用する．この場合はRLC直列回路の共振周波数になる．
 \begin{figure}[H]
 	\centering
 	\includegraphics[scale=0.5]{RLC.png}
@@ -144,7 +144,7 @@ f_0=\frac{1}{2 \pi\sqrt{LC}}
 \label{eq:kyousin}
 \end{eqnarray}
 となる．
-\\　式(\ref{eq:R}),図\ref{fig:RLCkyosin}からRLC直列回路が共振周波数近づくほどインピーダンスが小さくなり遠くなるほど大きくなる．インピーダンスが小さいと電流が大きくなる．したがって周波数が共振周波数のとき最も電力が大きいことが分かる．
+\\　式(\ref{eq:R}),図\ref{fig:RLCkyosin}からRLC直列回路が共振周波数近づくほどインピーダンスが小さくなり遠くなるほど大きくなる．インピーダンスが小さいと電流が大きくなる．したがって周波数が共振周波数のとき最も回路に出力される電力が大きいことが分かる．
 \begin{figure}[H]
 	\centering
 	\includegraphics[scale=0.5]{RLCkyousin.png}
@@ -193,8 +193,8 @@ x_{ss}(t)=(I-e^{AT})^{-1}e^{At}&\int_{0}^{T}e^{-A\tau}Bu(t+\tau)d\tau&
 \label{eq:Tteizyou}
 \end{eqnarray}
 よって，周期$T$定常解は式\ref{eq:Tteizyou}で求められる．
-\subsubsection{短形波入力の場合の定常解}
-短形波入力の定義は，
+\subsubsection{矩形波入力の場合の定常解}
+矩形波入力の定義は，
 \begin{eqnarray}
 u(t ) &=& 
 \begin{cases}
@@ -276,7 +276,7 @@ P_2=\frac{1}{T}\int_{0}^{T}R_Li_2^2dt
  	\caption{送電側回路測定部分}
  	\label{fig:shunt}
  \end{figure}
-\\　図(\ref{fig:shunt})に示されているものは，送電側の回路図上にシャント抵抗$R_s$を加えたものである．コイルに通る電流を$i$，シャント抵抗の抵抗は$R_s=0.1\Omega$なので，シャント抵抗間の電圧は，
+\\　図\ref{fig:shunt}に示されているものは，送電側の回路図上にシャント抵抗$R_s$を加えたものである．コイルに通る電流を$i$，シャント抵抗の抵抗は$R_s=0.1\Omega$なので，シャント抵抗間の電圧は，
 \begin{equation}
 v_s=0.1i
 \end{equation}
@@ -290,9 +290,9 @@ v_s=0.1i
 	\centering
 	\includegraphics[]{191127zouhuku.png}
 	\caption{乗算器回路図}
-	\label{fig:zouhuku}
+	\label{fig:jozan}
 \end{figure}
-　\\ \\図(fig:zouhuku)の乗算器回路において，計算方法としては以下のとおりである．
+　\\ \\図\ref{fig:jozan}の乗算器回路において，計算方法としては以下のとおりである．
 \begin{eqnarray}
 W=\frac{(X1-X2)(Y1-Y2)}{10}+Z
 \end{eqnarray}
@@ -326,7 +326,7 @@ W=\frac{(X1-X2)(Y1-Y2)}{10}+Z \nonumber \\
 \end{enumerate}
 \clearpage
 \subsection{プログラムによる周波数スイープ自動化}
-先行研究では，ワイヤレス給電の周波数スイープをArduinoだけで実行した．しかしArduinoだけでは周波数や時間を変更する時，わざわざコンパイルしなければならず面倒であった．そこで本研究では周波数スイープの周波数を送る，ワイヤレス給電の電力を受け取る作業をpythonで自動化させるようにした．\\
+先行研究では，ワイヤレス給電の周波数スイープをマイコンだけで実行した．しかしマイコンだけでは周波数や時間を変更する時，わざわざコンパイルしなければならず面倒であった．そこで本研究では周波数スイープの周波数を送る，ワイヤレス給電の電力を受け取る作業をpythonで自動化させるようにした．
 	一連の操作は以下の箇条書きと図\ref{fig:zidouka}のとおりである．
  \begin{figure}[H]
 	\centering
@@ -335,12 +335,12 @@ W=\frac{(X1-X2)(Y1-Y2)}{10}+Z \nonumber \\
 	\label{fig:zidouka}
 \end{figure}
 	\begin{enumerate}
-		\item pythonによって送られてきた周波数の値を送電側のArduinoで，ワイヤレス給電回路の中にある短形波を出力することができるクロックジェネレータへ指定した周波数を送る．
-		\item 乗算器によって出力された電力を送電側・受電側のArduinoにデューティー比で送る．また送られたデューティー比を電力に直す．
-		\item 電力をpythonへ送りデータを保存する．また自分が指定した時間が経ったら周波数を変えて，送りなおす．
+		\item PCによって送られてきた周波数の値を送電側のマイコンで，ワイヤレス給電回路の中にある短形波を出力することができるクロックジェネレータへ指定した周波数を送る．
+		\item 乗算器によって出力された電力を送電側・受電側のマイコンにデューティー比で送る．また送られたデューティー比を電力に直す．
+		\item 電力をPCへ送りデータを保存する．また自分が指定した時間が経ったら周波数を変えて，送りなおす．
 		\item 1～３までの一連の操作を最後の周波数になるまで送り続ける．
 	\end{enumerate}
-	以上のような流れですべての周波数の時の電力の測定をする．また，最初の周波数，最後の周波数，周波数をなんHzずつ見るための加算する周波数，一つの周波数の電力を測定する時間をGUIで入力できるようにした．次の図(\ref{fig:gui})は本実験において使用したGUIである．また作成したpythonとarduinoのプログラムは本論文の付録に書かれている．
+	以上のような流れですべての周波数の時の電力の測定をする．また，最初の周波数，最後の周波数，周波数をなんHzずつ見るための加算する周波数，一つの周波数の電力を測定する時間をGUIで入力できるようにした．次の図(\ref{fig:gui})は本実験において使用したGUIである．また作成したPCとマイコンのプログラムは本論文の付録に書かれている．
  \begin{figure}[H]
 	\centering
 	\includegraphics[scale=0.5]{gui.png}
@@ -356,18 +356,10 @@ W=\frac{(X1-X2)(Y1-Y2)}{10}+Z \nonumber \\
 この値が高い数値であればあるほど最適動作周波数だといえる．
 \subsection{能率的な周波数スイープ}
 \subsubsection*{時間・加算周波数決定}
-先行研究では，一つの周波数を送って測定するまでの時間を10秒で測定した．しかし，今研究においては多くの周波数を測りたいがためあまり時間をかけたくないから10秒では多すぎると考える．逆に測定時間を短くしすぎると出力される電力が周期的になるまで時間がかかるので周期的になる前に出力される．また低周波ずつ上げると確かに正確に測ることが可能だが同じく時間がかかる．逆に大雑把に周波数を取りすぎると最適周波数が分からなくなる．したがって周波数スイープが能率的になる周波数の測定時間と，加算周波数の量を事前に決めておく必要がある．事前に決めた数値は表\ref{tab:hyo1}である.
-\begin{table}[h]
-	\centering
-	\caption{測定時間・加算周波数決定値}
-	\label{tab:hyo1}
-	\begin{tabular}{|l|r|}\hline
-		測定時間  & 1.5s \\ \hline
-		加算周波数 & 10kHz\\ \hline
-	\end{tabular}
-\end{table}
-\clearpage
-\subsection{実験条件}
+能率的な動作周波数スイープを実現するには加算周波数と，測定する周波数の測定時間を決めなければならない．
+先行研究では，一つの周波数を送って測定するまでの時間を10秒で測定した．しかし，本研究においては多くの周波数による電圧，電流，電力を測りたいがためあまり時間をかけたくないから10秒では測定する時間をかけすぎである．逆に測定時間を短くしすぎると出力される電力が周期的になるまで時間がかかるので周期的になる前に出力される．また低周波ずつ上げると確かに正確に測ることが可能だが同じく時間がかかる．また本実験で送電側の電源の周波数を出力するためにMOSFETを使用した．MOSFETは高周波で出力し続けると発熱し破損の恐れがある.逆に大雑把に周波数を取りすぎると最適周波数が分からなくなる．したがって周波数スイープが能率的になる周波数の測定時間と，加算周波数は以上のことを考慮して決めなければならない.
+
+\subsection{実験条件パラメータ}
  \begin{figure}[H]
 	\centering
 	\includegraphics[scale=0.1]{koiru.JPG}
@@ -375,13 +367,13 @@ W=\frac{(X1-X2)(Y1-Y2)}{10}+Z \nonumber \\
 	\label{fig:koiru}
 \end{figure}
 本研究においてコイルは図\ref{fig:koiru}のものを使った．なおコイルは前々度の卒業研究(参考文献\cite{goizuka})で使われたものである．また，以下の表\ref{tab:koiru}において実験コイルの本体・インダクタンスのパラメータ，使用素子のパラメータの実験条件を示す．(参考文献：\cite{goizuka})また今回使用したクロックジェネレーター(図\ref{fig:clk})はおよそ4kHzより下の周波数は出力されないという性能も考慮して測定範囲は5kHzから100kHzとする．
-また実験回路の共振周波数は式(\ref{eq:kyousin})，表\ref{tab:indact},表\ref{tab:sosi}より，送受電同じく，
+また実験回路の共振周波数は式(\ref{eq:kyousin})，表\ref{tab:indact},表\ref{tab:sosi}より送受電同じく
 \begin{equation}
 f_0=\frac{1}{2\pi\sqrt{23.6\mu \times 108n}} 
 \\=99.7kHz
 \label{eq:99.6k}
 \end{equation}
-
+である．
  \begin{figure}[H]
 	\centering
 	\includegraphics[scale=0.1,angle=180]{IMG_0737.JPG}
@@ -457,78 +449,63 @@ f_0=\frac{1}{2\pi\sqrt{23.6\mu \times 108n}}
 \end{figure}
 \clearpage
 \section{実験結果}
-\subsection{能率化してない周作数スイープ}
-能率的な周波数スイープの比較材料として，能率化していない周波数スイープの場合も測定した．それぞれ図\ref{fig:not_nourituw},図 \ref{fig:not_nouritu_kou},図\ref{fig:not_nouritu_dousa}測定に用いた数値を表\ref{tab:not_nouritu}にある．
-\begin{table}[h]
-	\centering
-	\label{tab:not_nouritu}
-	\caption{能率化していない周波数スイープ測定時間と加算周波数}
-	\begin{tabular}{|l|l|}
-		\hline
-		測定時間  & 10s \\ \hline
-		加算周波数 & 1k  \\ \hline
-	\end{tabular}
-\end{table}
-
+\subsection{結果}
  \begin{figure}[H]
 	\centering
-	\includegraphics[]{not_nouritu_w.png}
-	\caption{周波数と出力電力との関係}
-	\label{fig:not_nourituw}
+	\includegraphics[]{hikakufre.png}
+	\caption{それぞれの加算周波数比較}
+	\label{fig:fre}
 \end{figure}
 \begin{figure}[H]
 	\centering
-	\includegraphics[]{notkouritu.png}
-	\caption{周波数と効率の関係}
-	\label{fig:not_nouritu_kou}
+	\includegraphics[]{hikakutime.png}
+	\caption{それぞれの測定時間の比較}
+\label{fig:time}
 \end{figure}
+図\ref{fig:fre} の加算周波数はそれぞれ$1kHz,5kHz,10kHz$で動作周波数スイープしたときである．計測時間はどの加算周波数においても10秒と設定した．図\ref{fig:fre} にもわかる通り$10kHz$のときは測定時間が短縮化されたが加算する範囲が大きすぎるため，$10kHz$間の出力変化に対応できない．また，加算周波数が$1kHz$のように低周波数ならば全体の測定時間が長くなる．また上にも述べた通りMOSFETの破損の原因に繋がる．したがって5kHzの時は10kHz間の出力変化に対応できかつ測定時間を短くすることができるので加算周波数では5kHzのときが最も能率的である．\\　図\ref{fig:time} はそれぞれ0.5秒，1.5秒，10秒のときを計測した場合である．また加算周波数はどの場合において$5kHz$なお本研究はそれ以外の時間も計測したが代表として3つ上げる．0.5秒のときまだ電力が出力されていないので小さい値で出力される．よって，10秒のときと比べて最も近い値が出力された1.5秒の時が測定時間に最適な時間である．まとめると本研究能率的な動作周波数スイープは以下の表になる．
+\begin{table}[h]
+	\caption{実験で求められた能率的な周波数スイープ条件}
+	\centering
+	\begin{tabular}{|l|l|}
+		\hline
+		加算する周波数     & 5kHz \\ \hline
+		1周波数につき計測時間 & 1.5s \\ \hline
+	\end{tabular}
+\end{table}
+\subsection{シミュレーションとの比較}
 \begin{figure}[H]
 	\centering
-	\includegraphics[]{not_nouritu_dousa.png}
-	\caption{最適動作判定}
-	\label{fig:not_nouritu_dousa}
+	\includegraphics[]{simuhikaku.png}
+	\caption{シミュレーションとの比較}
+	\label{fig:simuhikaku}
 \end{figure}
-シミュレーションの結果と比べて送電側・受電側双方の電力が小さい値で出力された．
-\subsection{能率的な周波数スイープ}
-測定結果を以下のグラフに示す．
-\begin{figure}[H]
-\centering
-\includegraphics[]{nouritu_w.png}
-\caption{周波数と出力電力との関係}
-\label{fig:nourituw}
-\end{figure}
-\begin{figure}[H]
-	\centering
-	\includegraphics[]{nouritu_kou.png}
-	\caption{周波数と効率の関係}
-	\label{fig:nouritu_kou}
-\end{figure}
-\begin{figure}[H]
-	\centering
-	\includegraphics[]{nouritu_dousa.png}
-	\caption{最適動作判定}
-	\label{fig:nouritu_dousa}
-\end{figure}
+図\ref{fig:simuhikaku} からわかる通りずれが生じていることが分かる．これは実験装置の値がシミュレーションのと比べてそれぞれコイルの自己相互インダクタンス，コイルの内部抵抗，送電側受電側のコンデンサのずれが生じているから回路の共振周波数が変わりその結果電力の出力にずれが生じていると考えられる．
 \clearpage
 \section{結言}
 \subsection{考察}
-\subsubsection{実験装置について}
-実験結果からわかる通り，出力結果が送電側受電側が0．0$W$という値が出力された．これはarduinoの電圧の出力方法が式(\ref{eq:d})になる．出力された電圧が4.9$mV$の時デューティ比$d$が0となるからこのように出力される．だがシミュレーション結果からわかる通り実験結果の0.0$W$付近の値が0.01$W$以下となっている．このことにより，実験装置はうまく出力されていると考えられる．
+\subsubsection*{実験装置について}
+図\ref{fig:dennryoku} において電力だけ測定すると，出力結果が送電側受電側が0．0$W$と出力された．その理由は以下の2つに考えられる．
+\begin{description}
+	\item マイコンの電圧出力によるもの\mbox{}\\
+マイコンの電圧の出力方法が式(\ref{eq:d})になる．出力された電圧が4.9$mV$の時デューティ比$d$が0となるからこのように出力される．だがシミュレーション結果からわかる通り実験結果の0.0$W$付近の値が0.01$W$以下となっている．このことにより，実験装置はうまく出力されていると考えられる．
 \begin{equation}
 \label{eq:d}
 V=\frac{5.0d}{1023}
 \end{equation}
+	\item 乗算器によるもの \mbox{}\\
+乗算器は低い電圧どおしでかけると出力される電圧に誤差が生じてしまい結果非常に小さい値が出力されるのである．
+\end{description}
+
 \begin{figure}[H]
 	\centering
-	\includegraphics[]{simuhikaku.png}
-	\caption{最適動作判定}
-	\label{fig:simuhikaku}
+	\includegraphics[]{電力比較.png}
+	\caption{周波数スイープ電力比較}
+	\label{fig:dennryoku}
 \end{figure}
-図\ref{fig:simuhikaku}はシミュレーション実験結果との比較である．図から見て分かる通りずれが生じていることが分かる．これは実験装置の値がシミュレーションのと比べてそれぞれコイルの自己相互インダクタンス，コイルの内部抵抗，送電側受電側のコンデンサのずれが生じているから回路の共振周波数が変わりその結果電力の出力にずれが生じていると考えられる．
-\subsubsection{周波数スイープの比較}
-図\ref{fig:not_nouritu_dousa}と図\ref{fig:nouritu_dousa}を比較して，どちらも最適な周波数のとき最適動作度が大きくなっていることから最適動作周波数を見つけることができた．しかし，非能率の周波数スイープは表\ref{tab:not_nouritu}にもわかる通り1$kHz$ずつはかっているため正確な値が出る．一方能率化した周波数スイープは10$kHz$ずつはかっているため10$kHz$以内での周波数変化に対応できない．その結果図\ref{fig:nouritu_dousa}は最適動作度が大きい値の周波数の範囲が大きく取ることになっている．改善点としては最適動作度の大きい範囲での周波数スイープを小さい加算周波数でまた測定するという方法が考えられるが時間がかかるという点が挙げられる．また，電力がマイクロコントローラーに
+
+
 \subsection{今後の展望}
-能率的な周波数スイープを使うことにより，測定時間最短化することができた．それにより時間最短化することにより，ワイヤレス給電の状況によって周波数を変化させることにより受電側どんな状況にあってもいつも高電力を出力するように制御するということができると考えられる．しかし考察にもあるように非能率の周波数スイープと比べて正確性に欠ける．したがって正確かつ最短な能率的周波数スイープする方法を求められる．
+能率的な周波数スイープを使うことにより，測定時間最短化することができた．それにより時間最短化することにより，ワイヤレス給電の状況によって周波数を変化させることにより受電側どんな状況にあってもいつも高電力を出力するように制御するということができると考えられる．しかし，ワイヤレス給電の電力出力を自動制御するには1.5秒でも遅い．ワイヤレス給電のさらに正確かつさらに最短な能率的周波数スイープさせる方法・回路中のローパスフィルタの時定数見直しが求められる．また，低い電圧どおしで乗算器に通すと性能上うまく出力されない問題があるので乗算器またはその前のオペアンプの見直しも求められる．
 \clearpage
 \section{謝辞}
  本研究の進行や本論文等の執筆にあたり，ご指導いただいた穂高一条教授に感謝の意を示すとともに深く御礼申し上げます．
