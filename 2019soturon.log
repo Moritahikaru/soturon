@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.8.3-191112-2.6 (utf8.sjis) (TeX Live 2019/W32TeX) (preloaded format=platex 2019.12.11)  10 FEB 2020 00:18
+This is e-pTeX, Version 3.14159265-p3.8.3-191112-2.6 (utf8.sjis) (TeX Live 2019/W32TeX) (preloaded format=platex 2019.12.11)  12 FEB 2020 09:40
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -573,12 +573,12 @@ LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <14.4> not available
 File: wpt_2020128.png Graphic file (type bmp)
 <wpt_2020128.png>
 LaTeX Font Info:    Trying to load font information for OMS+txr on input line 9
-5.
+4.
  (c:/w32tex/share/texmf-dist/tex/latex/txr/omstxr.fd
 File: omstxr.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Font shape `OMS/txr/m/n' in size <12> not available
-(Font)              Font shape `OMS/txsy/m/n' tried instead on input line 95.
+(Font)              Font shape `OMS/txsy/m/n' tried instead on input line 94.
  [6
 
 ]
@@ -591,12 +591,12 @@ File: RLC.png Graphic file (type bmp)
 File: RLCkyousin.png Graphic file (type bmp)
 <RLCkyousin.png>
  [8]
-Overfull \hbox (3.6679pt too wide) detected at line 216
+Overfull \hbox (3.6679pt too wide) detected at line 215
 []
  []
 
 [9]
-Overfull \hbox (35.75589pt too wide) detected at line 224
+Overfull \hbox (35.75589pt too wide) detected at line 223
 []
  []
 
@@ -662,19 +662,19 @@ File: 電力比較.png Graphic file (type bmp)
  [25
 
 ] [26]
-Underfull \hbox (badness 10000) in paragraph at lines 517--518
+Underfull \hbox (badness 10000) in paragraph at lines 516--517
 []\JY1/mc/m/n/12 ロ ーム株式会社 ： ” ワイヤレス給電とは ” ーエレクトロニクス
 豆知
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 517--518
+Underfull \hbox (badness 10000) in paragraph at lines 516--517
 \JY1/mc/m/n/12 識\OT1/txr/m/n/12 , https://www.rohm.co.jp/electronics-basics/wi
 reless-charging/wireless-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 524--525
+Underfull \hbox (badness 10000) in paragraph at lines 523--524
 []\OT1/txr/m/n/12 B&PLUS:"\JY1/mc/m/n/12 ワイヤレス給電の現状と未来\OT1/txr/m/n
 /12 "\JY1/mc/m/n/12 ， \OT1/txr/m/n/12 https://www.b-plus-
  []
@@ -695,7 +695,7 @@ File: hanten2.png Graphic file (type bmp)
  [31] (I search kanjifont definition file: . . )
 (I search font definition file: . . . . . . . )
 LaTeX Font Info:    Trying to load font information for OT1+txtt on input line 
-668.
+667.
 
 (c:/w32tex/share/texmf-dist/tex/latex/txr/ot1txtt.fd
 File: ot1txtt.fd 2000/12/15 v3.1
@@ -703,24 +703,24 @@ File: ot1txtt.fd 2000/12/15 v3.1
 (I search kanjifont definition file: . . ) (I search font definition file: . .
 . . . . . )
 LaTeX Font Info:    Trying to load font information for OT1+txss on input line 
-669.
+668.
  (c:/w32tex/share/texmf-dist/tex/latex/txr/ot1txss.fd
 File: ot1txss.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Font shape `OT1/txss/m/n' will be
-(Font)              scaled to size 5.69998pt on input line 669.
+(Font)              scaled to size 5.69998pt on input line 668.
  [32] [33]
-Overfull \hbox (53.38731pt too wide) in paragraph at lines 807--808
+Overfull \hbox (53.38731pt too wide) in paragraph at lines 806--807
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 [34]
-Overfull \hbox (5.38683pt too wide) in paragraph at lines 877--878
+Overfull \hbox (5.38683pt too wide) in paragraph at lines 876--877
 [][][][][][][][][][][][][][][][][][][] 
  []
 
 [35]
-Overfull \hbox (0.58678pt too wide) in paragraph at lines 908--909
+Overfull \hbox (0.58678pt too wide) in paragraph at lines 907--908
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
@@ -738,4 +738,4 @@ Here is how much of TeX's memory you used:
  929 hyphenation exceptions out of 8191
  34i,14n,45p,937b,1809s stack positions out of 5000i,500n,10000p,500000b,80000s
 
-Output written on 2019soturon.dvi (38 pages, 258540 bytes).
+Output written on 2019soturon.dvi (38 pages, 258576 bytes).
